@@ -1,0 +1,37 @@
+//
+// Global, common block styles.
+//
+// We could actually put all CSS styles into a single file
+// as they are all being enqueued inline by WordPress even
+// if the block style is not being used in the page/post content.
+// But we keep it this way to be able to control `!important`
+// style rules specifically for each block style.
+//
+// BUT: This would work only in themes that disable
+// `wp_should_load_separate_core_block_assets()`. So, another
+// reason why it is better to leave it inline enqueued.
+//
+// Plus this way we can use a block style placeholder `.abs`.
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '_setup/_index';
+
+:root {
+	--abs_drop_shadow: #{ 0 ( $ratio_min +em ) ( $ratio +em ) rgba( #000, .2 ) };
+	--abs_overlap_value: 100px;
+}
+
+body.editor-styles-wrapper [class*="-overlap-"] {
+	--abs_overlap_value: 0;
+}
+
+// For columns alignment.
+.wp-block-column:only-child {
+	margin-left: auto;
+	margin-right: auto;
+}

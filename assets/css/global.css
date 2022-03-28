@@ -1,0 +1,1 @@
+:root{--abs_drop_shadow:0 0.382em 1.618em rgba(0,0,0,0.2);--abs_overlap_value:100px}body.editor-styles-wrapper [class*=-overlap-]{--abs_overlap_value:0}.wp-block-column:only-child{margin-left:auto;margin-right:auto}

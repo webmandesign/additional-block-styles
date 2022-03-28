@@ -1,0 +1,31 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+
+	@media (max-width: 1024px) {
+		display: none;
+	}
+
+	&.wp-block-column {
+		@media (min-width: 600px) and (max-width: 781px) {
+
+			~ .wp-block-column {
+				margin-#{$left}: 0;
+
+				&:nth-child(odd) {
+					margin-#{$left}: var(--wp--style--block-gap, 2em);
+				}
+
+			}
+
+		}
+	}
+
+}

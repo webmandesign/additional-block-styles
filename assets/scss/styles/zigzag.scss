@@ -1,0 +1,40 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+@import '../_tools/_index';
+
+@supports ( mask-image: url('') ) {
+	#{$abs} {
+		height: 10px !important;
+		background: none !important;
+		border: 0 !important;
+		mask-image: none !important;
+
+		&::before,
+		&::after {
+			display: none !important;
+		}
+
+		&::before {
+			content: '' !important;
+			display: block !important;
+			position: relative !important;
+			width: 100% !important;
+			height: 100% !important;
+			inset: 0 !important;
+			background: currentColor;
+			border: 0 !important;
+			transform: none !important;
+			vertical-align: top;
+			speak: none;
+			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 5"><path d="m0 0 l0 1 l4 4 l4 -4 l0 -1 l-4 4 l-4 -4 z" /></svg>' ) }');
+			mask-position: center;
+		}
+
+	}
+}

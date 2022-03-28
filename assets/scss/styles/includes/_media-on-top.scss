@@ -1,0 +1,42 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+	display: block;
+
+	img {
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		object-fit: fill;
+	}
+
+	> .wp-block-media-text__content {
+		padding: ( $ratio +em ) 0 0 !important;
+
+		> *:first-child {
+			margin-top: 0;
+		}
+
+	}
+
+	&.has-background > .wp-block-media-text__content {
+		padding: ( $ratio +em ) 10% !important;
+	}
+
+	&.is-image-fill > .wp-block-media-text__media {
+
+		&,
+		> a {
+			min-height: $ratio_min * 100vh;
+		}
+
+	}
+
+}

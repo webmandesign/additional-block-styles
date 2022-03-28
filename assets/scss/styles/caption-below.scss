@@ -1,0 +1,36 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+
+	figure figcaption {
+		position: relative !important;
+		max-height: none !important;
+		bottom: auto !important;
+		padding: 1em !important;
+		margin: 0 !important;
+		font-size: inherit !important;
+		line-height: $ratio !important;
+		background: transparent !important;
+		color: inherit !important;
+		overflow: visible !important;
+		backdrop-filter: none !important;
+
+		a {
+			color: inherit !important;
+		}
+
+	}
+
+	figcaption > .wp-block-group {
+		margin-top: -1em;
+		margin-bottom: -1em;
+	}
+
+}

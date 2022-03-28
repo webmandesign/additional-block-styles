@@ -1,0 +1,37 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+body:not(.wp-admin):not(.editor-styles-wrapper) #{$abs} {
+	clip: rect( 1px, 1px, 1px, 1px );
+	clip-path: inset( 50% );
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	line-height: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+
+.editor-styles-wrapper #{$abs} {
+
+	&:not(:hover):not(:focus):not(:focus-within) {
+		opacity: .5;
+	}
+
+	&::before {
+		content: ")";
+		display: inline-block;
+		margin: $ratio_maj +em;
+		font-size: 16px;
+		font-weight: 700;
+		speak: none;
+		transform: rotate( 90deg );
+	}
+
+}
