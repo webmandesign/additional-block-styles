@@ -7,28 +7,27 @@
 
 @import '../_setup/_index';
 
-
 #{$abs} {
 
-	@media (max-width: 1024px) {
+	@media (max-width: #{$breakpoint_tablet}) {
 		display: block;
 	}
 
 	> *:not(:only-child),
 	> [class*="wp-block-"]:not(:only-child) {
-		@media (max-width: 1024px) {
+		@media (max-width: #{$breakpoint_tablet}) {
 			width: 100%;
 			margin-left: auto;
 			margin-right: auto;
 		}
 	}
 
-	&.wp-block-media-text {
-		@media (min-width: 600px) and (max-width: 1024px) {
-			// This is basically `media-on-top.scss` here,
-			// so we can import it directly.
-			@import 'includes/media-on-top';
-		}
-	}
+}
 
+@media (min-width: 600px) and (max-width: #{$breakpoint_tablet}) {
+	$selector: '.wp-block-media-text' + $abs;
+
+	// This is basically `media-on-top.scss` here,
+	// so we can import it directly.
+	@import 'includes/media-on-top';
 }

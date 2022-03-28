@@ -1,1 +1,4 @@
-$abs: '.abs';
+$selector_before: '' !default;
+$selector_after: '' !default;
+
+$abs: $selector_before + '.abs' + $selector_after;

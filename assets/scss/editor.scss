@@ -1,0 +1,68 @@
+//
+// Editor overrides.
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '_setup/_index';
+
+.editor-styles-wrapper {
+
+	[class*="screen-reader-text"] {
+		clip: auto;
+		clip-path: none;
+		position: relative !important;
+		width: auto;
+		height: auto;
+		line-height: normal;
+		overflow: visible;
+
+		&:not(:hover):not(:focus):not(:focus-within) {
+			opacity: .5;
+		}
+
+		&::before {
+			content: ")";
+			display: inline-block;
+			margin: $ratio_maj +em;
+			font-size: 16px;
+			font-weight: 700;
+			speak: none;
+			transform: rotate( 90deg );
+		}
+
+	}
+
+}
+
+// In style preview only.
+body.editor-styles-wrapper {
+
+	[class*="-align"] {
+		max-width: 50%;
+	}
+
+	[class*="-media-on-top"] {
+		max-width: percentage( $ratio_min );
+		margin: 0 auto;
+	}
+
+	[class*="-overlap-"] {
+		--abs_overlap_value: 0;
+	}
+
+	.wp-block-media-text[class*="-stacked-on-tablet"] {
+		max-width: percentage( $ratio_min );
+		margin: 0 auto;
+	}
+
+	[class*="-hidden-on-tablet"] {
+		display: block;
+		max-width: none;
+		opacity: .5;
+	}
+
+}

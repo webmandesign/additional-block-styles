@@ -9,7 +9,7 @@
 
 #{$abs} {
 
-	@media (max-width: 1024px) {
+	@media (max-width: #{$breakpoint_tablet}) {
 		display: none;
 	}
 

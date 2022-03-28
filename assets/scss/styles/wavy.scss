@@ -5,6 +5,8 @@
 // @since  1.0.0
 //
 
+$selector_before: '.wp-block-media-text';
+
 @import '../_setup/_index';
 @import '../_tools/_index';
 
@@ -23,22 +25,22 @@
 			mask-repeat: no-repeat;
 		}
 
-		// Matching WordPress block media query:
-		@media (max-width: 600px) {
-			> .wp-block-media-text__media {
-				mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'top' ) ) }');
-				mask-position: center bottom;
-			}
+		> .wp-block-media-text__media {
+			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'left' ) ) }');
+			mask-position: right center;
 		}
 
-		@media (min-width: 601px) {
-			> .wp-block-media-text__media {
-				mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'left' ) ) }'); // No RTL here.
-				mask-position: right center;
-			}
+		&.has-media-on-the-right > .wp-block-media-text__media {
+			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'right' ) ) }');
+			mask-position: left center;
+		}
+
+		// Matching WordPress block media query:
+		@media (max-width: 600px) {
+			> .wp-block-media-text__media,
 			&.has-media-on-the-right > .wp-block-media-text__media {
-				mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'right' ) ) }'); // No RTL here.
-				mask-position: left center;
+				mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( map-get( $mask_svg, 'top' ) ) }');
+				mask-position: center bottom;
 			}
 		}
 

@@ -26,10 +26,6 @@
 	--abs_overlap_value: 100px;
 }
 
-body.editor-styles-wrapper [class*="-overlap-"] {
-	--abs_overlap_value: 0;
-}
-
 // For columns alignment.
 .wp-block-column:only-child {
 	margin-left: auto;

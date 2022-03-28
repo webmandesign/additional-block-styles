@@ -2,7 +2,7 @@
 /**
  * Plugin Name:  Additional Block Styles
  * Plugin URI:   https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
- * Description:  Provides additional styles to WordPress native blocks.
+ * Description:  Provides additional styles for WordPress native blocks.
  * Version:      1.0.0
  * Author:       WebMan Design, Oliver Juhas
  * Author URI:   https://www.webmandesign.eu/
@@ -32,8 +32,12 @@ defined( 'ABSPATH' ) || exit;
 	define( 'ABS_PATH', plugin_dir_path( ABS_FILE ) ); // Trailing slashed.
 	define( 'ABS_URL', plugin_dir_url( ABS_FILE ) ); // Trailing slashed.
 
-	define( 'ABS_VERSION_WP', '5.3' );
+	define( 'ABS_VERSION_WP', '5.8' );
 	define( 'ABS_VERSION_PHP', '7.0' );
+
+	if ( ! defined( 'ABS_USE_IMPORTANT' ) ) {
+		define( 'ABS_USE_IMPORTANT', true );
+	}
 
 // Check that the site meets the minimum WP and PHP requirements.
 if (

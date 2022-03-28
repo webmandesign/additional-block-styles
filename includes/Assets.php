@@ -52,6 +52,13 @@ class Assets {
 				self::get_css( '', ABS_PATH . 'assets/css/global.css' )
 			);
 
+			if ( doing_action( 'enqueue_block_editor_assets' ) ) {
+				wp_add_inline_style(
+					'wp-block-library',
+					self::get_css( '', ABS_PATH . 'assets/css/editor.css' )
+				);
+			}
+
 	} // /enqueue
 
 	/**

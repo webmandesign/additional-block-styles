@@ -7,4 +7,6 @@
 
 @import '../_setup/_index';
 
+$selector: '.wp-block-media-text' + $abs;
+
 @import 'includes/media-on-top';

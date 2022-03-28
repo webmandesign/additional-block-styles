@@ -34,11 +34,20 @@
 		list-style: none;
 	}
 
-	&.wp-block-latest-posts > li {
-		padding-top: $ratio +em;
-		padding-bottom: $ratio +em;
-		margin-top: 0;
-		margin-bottom: 0;
+	&.wp-block-latest-posts {
+
+		> li {
+			padding-top: $ratio +em;
+			padding-bottom: $ratio +em;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		&.is-grid > li:last-child {
+			border-bottom: 1px solid;
+			border-color: inherit;
+		}
+
 	}
 
 }

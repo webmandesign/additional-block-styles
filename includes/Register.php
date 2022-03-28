@@ -50,6 +50,15 @@ class Register {
 	private static $styles = array();
 
 	/**
+	 * Should we use `!important` in CSS styles?.
+	 *
+	 * @since   1.0.0
+	 * @access  private
+	 * @var     bool
+	 */
+	private static $use_important = true;
+
+	/**
 	 * Initialization.
 	 *
 	 * @since  1.0.0
@@ -59,6 +68,15 @@ class Register {
 	public static function init() {
 
 		// Processing
+
+			/**
+			 * Filters whether to use `!important` in CSS styles globally.
+			 *
+			 * @since  1.0.0
+			 *
+			 * @param  bool $use_important
+			 */
+			self::$use_important = (bool) apply_filters( 'abs/use_important', ABS_USE_IMPORTANT );
 
 			include_once ABS_PATH . 'styles/_index.php';
 
@@ -138,7 +156,7 @@ class Register {
 				'label'         => $class,
 				'inline_style'  => true,
 				'style_handle'  => null,
-				'use_important' => null, // Custom property needed below.
+				'use_important' => self::$use_important, // Custom property needed below.
 			) );
 
 

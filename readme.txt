@@ -1,43 +1,81 @@
 === Additional Block Styles ===
+
 Contributors:      webmandesign
-Donate link:       https://www.webmandesign.eu
+Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
-Requires at least: 5.2
+Requires at least: 5.8
 Tested up to:      5.9
-Stable tag:        1.3.6
+Requires PHP:      7.0
+Stable tag:        1.0.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
-Tags:              webman, webman design, woocommerce, themes
+Tags:              webman, webman design, blocks, block editor, block styles
 
-Provides deeper Additional Block Styles in WebMan Design accessibility ready themes.
+Provides new additional creative block styles to WordPress native blocks.
 
 
 == Description ==
 
-Provides deeper Additional Block Styles in WebMan Design accessibility ready themes. **Please note that this plugin does not work with other 3rd party themes!**
+Provides new additional creative styles to your WordPress website native blocks in editor (Gutenberg). Simply activate the plugin and use newly available block styles (see "Frequently Asked Questions" for more info).
 
-The integration is provided for [WebMan design accessibility ready themes](https://www.webmandesign.eu/project-tag/accessibility-ready/) since Cindy theme.
+= List of included block styles: =
+
+**Portfolio gallery**
+Display caption of gallery images below the image to create a portfolio-like appearance.
+
+**Enhanced Media & Text**
+Enable creative transition between media and text containers. Also, display the media on top for easy feature or service display.
+
+**Paint brush effect**
+Give your Image and Media & Text blocks interesting, unique look with brushstroke effect.
+
+**Overlap blocks**
+Overlap various (container) blocks over content above or below.
+
+**List items separator**
+Separate list items and latest posts with a border.
+
+**Remove gaps**
+You can remove gaps between columns or gallery images. Also, a useful style to remove vertical gap from various blocks is provided.
+
+**Column alignment**
+Use this style with singular column which is not 100% wide. You can then align the column in columns container using these styles.
+
+**Drop shadow**
+Make various blocks stand out applying a drop shadow style.
+
+**Responsive styles**
+Hide a column, or stack columns and Media & Text on tablet screens (in portrait orientation).
+
+**Separator styles**
+New double line and zigzag separator styles are provided.
+
+**Accessibility related styles**
+You can hide headings accessibly. They will still be accessible for assistive technology such as screen reader, but visually they'll be hidden.
+
 
 
 == Installation ==
 
 1. Unzip the plugin download file and upload `additional-block-styles` folder into the `/wp-content/plugins/` directory.
 2. Activate the plugin through the *"Plugins"* menu in WordPress.
-3. Plugin has no options, works immediately after activation. The plugin requires WooCommerce plugin and one of [WebMan design accessibility ready themes](https://www.webmandesign.eu/project-tag/accessibility-ready/) to be active.
+3. Plugin has no options, it works immediately after activation. It adds additional block styles into your WordPress block editor.
 
 
 == Frequently Asked Questions ==
 
-= It does not work? =
+= How does it work? =
 
-I'm sorry, but this plugin was created for [WebMan design accessibility ready themes](https://www.webmandesign.eu/project-tag/accessibility-ready/). It does not work with other 3rd party themes.
+Once you enable the plugin, it will do its magic automatically. The plugin adds new block styles to WordPress native blocks in editor (Gutenberg).
 
-If you are using one of the compatible themes (all themes since Cindy), the plugin also requires WooCommerce plugin to be active.
+With block styles you can change block appearance with one click. Simply choose your preferred style from block options in sidebar on page/post edit screen and you are done.
 
-= Search returns only products. =
+→ [Video tutorial about how to use block styles](https://vimeo.com/517486265).
 
-This plugin replaces theme's default generic search form with WooCommerce products search form. If you would still like to use the default search form, disable the *"Replace theme search"* option in **Appearance → Customize → WooCommerce → Product Catalog**.
+= There are no settings? =
+
+No :) It really just works.
 
 
 == Changelog ==

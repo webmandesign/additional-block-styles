@@ -29,7 +29,7 @@ class Setup_Editor {
 		// Processing
 
 			/**
-			 * Enabling theme-independent editor support.
+			 * Enabling theme-independent editor features.
 			 */
 			add_theme_support( 'custom-line-height' );
 			add_theme_support( 'custom-units' );
