@@ -1,1 +1,1 @@
-@media (max-width:880px){.abs{display:none}}@media (min-width:600px) and (max-width:781px){.abs.wp-block-column~.wp-block-column{margin-LEFT:0}.abs.wp-block-column~.wp-block-column:nth-child(odd){margin-LEFT:var(--wp--style--block-gap,2em)}}
+@media (max-width:880px){.abs{display:none}}@media (min-width:600px) and (max-width:781px){.abs.wp-block-column~.wp-block-column{margin-left-rtl:0}.abs.wp-block-column~.wp-block-column:nth-child(odd){margin-left-rtl:var(--wp--style--block-gap,2em)}}

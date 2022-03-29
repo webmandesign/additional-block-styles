@@ -1,0 +1,24 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		box-shadow: var(--abs_inner_shadow);
+	}
+
+	.wp-block-cover__inner-container {
+		z-index: 3;
+	}
+
+}

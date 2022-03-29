@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-03-28 18:38+0200\n"
-"PO-Revision-Date: 2022-03-28 18:40+0200\n"
+"POT-Creation-Date: 2022-03-29 15:33+0200\n"
+"PO-Revision-Date: 2022-03-29 15:33+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -68,6 +68,11 @@ msgctxt "Block style label."
 msgid "Paint brush"
 msgstr "Náter farbou"
 
+#: styles/image.php:34
+msgctxt "Block style label."
+msgid "Inner shadow"
+msgstr "Vnútorný tieň"
+
 #: styles/lists.php:23
 msgctxt "Block style label."
 msgid "Line separator"
@@ -102,6 +107,11 @@ msgstr "Prekrytie hore"
 msgctxt "Block style label."
 msgid "Overlap below"
 msgstr "Prekrytie dole"
+
+#: styles/quotes.php:19
+msgctxt "Block style label."
+msgid "Modern bubble"
+msgstr "Moderná bublina"
 
 #: styles/responsiveness.php:19
 msgctxt "Block style label."

@@ -17,6 +17,7 @@ include 'lists.php';
 include 'media-text.php';
 include 'others.php';
 include 'overlap.php';
+include 'quotes.php';
 include 'responsiveness.php';
 include 'separator.php';
 include 'spacing.php';

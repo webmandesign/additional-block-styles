@@ -27,3 +27,13 @@ Register::add_style(
 		),
 	)
 );
+
+Register::add_style(
+	'inset-shadow',
+	array(
+		'label'  => _x( 'Inner shadow', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => array(
+			'core/cover',
+		),
+	)
+);

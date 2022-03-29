@@ -36,6 +36,10 @@
 
 	}
 
+	ul[class*="-border-inner"] {
+		list-style: none;
+	}
+
 }
 
 // In style preview only.

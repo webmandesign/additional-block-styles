@@ -14,13 +14,27 @@
 		max-height: none !important;
 		bottom: auto !important;
 		padding: 1em !important;
-		margin: 0 !important;
+		margin: 0 0 1em !important;
 		font-size: inherit !important;
 		line-height: $ratio !important;
 		background: transparent !important;
 		color: inherit !important;
 		overflow: visible !important;
 		backdrop-filter: none !important;
+		z-index: 1;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: currentColor;
+			border-radius: inherit;
+			opacity: var(--pseudo_background_opacity, .05);
+			z-index: -1;
+		}
 
 		a {
 			color: inherit !important;

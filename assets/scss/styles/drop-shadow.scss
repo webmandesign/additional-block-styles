@@ -9,4 +9,13 @@
 
 #{$abs} {
 	box-shadow: var(--abs_drop_shadow);
+
+	&.wp-block-image {
+		box-shadow: none;
+
+		img {
+			box-shadow: var(--abs_drop_shadow);
+		}
+
+	}
 }

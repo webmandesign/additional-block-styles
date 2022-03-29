@@ -1,0 +1,85 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.0.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+	$border_width: 2px;
+
+	position: relative;
+	padding: 0;
+	border: 0 !important;
+
+	&::before,
+	&::after {
+		display: none;
+	}
+
+	p {
+		position: relative;
+		padding-left: 6%;
+		padding-right: 6%;
+		margin: 0 !important;
+		border-#{$left}: $border_width solid;
+
+		+ p {
+			padding-top: 1em;
+		}
+
+		&:first-child {
+			border-top: $border_width solid;
+			padding-top: 6%;
+		}
+
+		&:last-of-type {
+			padding-bottom: 6%;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 12%;
+				#{$left}: $border_width / -2;
+				bottom: 0;
+				border-top: $border_width solid;
+			}
+
+		}
+
+	}
+
+	cite {
+		display: block;
+		position: relative;
+		padding-top: $ratio_min +rem;
+		padding-#{$left}: 6%;
+		margin-top: 2rem !important;
+
+		&::after,
+		&::before {
+			content: '' !important;
+			position: absolute;
+			height: 2rem;
+			#{$left}: 12%;
+			bottom: calc( 100% + #{ $border_width } );
+			margin-#{$left}: $border_width / -2;
+			border-#{$left}: $border_width solid;
+		}
+
+		&::after {
+			transform: skewX( -45deg );
+			transform-origin: 100% 100%;
+
+			.rtl & {
+				transform: skewX( 45deg );
+				transform-origin: 0 100%;
+			}
+
+		}
+
+	}
+
+}

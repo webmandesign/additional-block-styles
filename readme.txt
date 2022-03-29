@@ -33,6 +33,9 @@ Give your Image and Media & Text blocks interesting, unique look with brushstrok
 **Overlap blocks**
 Overlap various (container) blocks over content above or below.
 
+**Modern quotes**
+A modern bubble style is provided for Quote block.
+
 **List items separator**
 Separate list items and latest posts with a border.
 
@@ -42,8 +45,8 @@ You can remove gaps between columns or gallery images. Also, a useful style to r
 **Column alignment**
 Use this style with singular column which is not 100% wide. You can then align the column in columns container using these styles.
 
-**Drop shadow**
-Make various blocks stand out applying a drop shadow style.
+**Shadows**
+Make various blocks stand out applying a drop shadow style. Or push the Cover block background further to the back with inner shadow.
 
 **Responsive styles**
 Hide a column, or stack columns and Media & Text on tablet screens (in portrait orientation).
@@ -54,6 +57,9 @@ New double line and zigzag separator styles are provided.
 **Accessibility related styles**
 You can hide headings accessibly. They will still be accessible for assistive technology such as screen reader, but visually they'll be hidden.
 
+= Got a suggestion? =
+
+If you have a suggestion for a new block style, please share it here in [support section](https://wordpress.org/support/plugin/additional-block-styles/) or in [GitHub repository issues](https://github.com/webmandesign/additional-block-styles/issues).
 
 
 == Installation ==
@@ -76,6 +82,31 @@ With block styles you can change block appearance with one click. Simply choose 
 = There are no settings? =
 
 No :) It really just works.
+
+= Want to suggest a new block style? =
+
+If you have a suggestion for a new block style, please share it here in [support section](https://wordpress.org/support/plugin/additional-block-styles/) or in [GitHub repository issues](https://github.com/webmandesign/additional-block-styles/issues).
+
+= How to change shadow intensity? =
+
+You can use custom CSS to change styles to your specific needs.
+
+For example, apply this code into **Appearance → Customize → Additional CSS** to modify block style shadows:
+
+`:root {
+	--abs_shadow_spread: 30px;
+	--abs_shadow_opacity: .5;
+}`
+
+= How to change overlap size? =
+
+You can use custom CSS to change styles to your specific needs.
+
+For example, apply this code into **Appearance → Customize → Additional CSS** to change overlap size:
+
+`:root {
+	--abs_overlap_value: 150px;
+}`
 
 
 == Changelog ==

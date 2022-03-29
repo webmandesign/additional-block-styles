@@ -94,15 +94,16 @@ class Assets {
 			$css = ob_get_clean();
 
 			// RTL support and fixing uppercase.
+			$rtl_values = array( 'left-rtl', 'right-rtl' );
 			if ( is_rtl() ) {
 				$css = str_replace(
-					array( 'LEFT', 'RIGHT' ),
+					$rtl_values,
 					array( 'right', 'left' ),
 					$css
 				);
 			} else {
 				$css = str_replace(
-					array( 'LEFT', 'RIGHT' ),
+					$rtl_values,
 					array( 'left', 'right' ),
 					$css
 				);

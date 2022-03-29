@@ -16,7 +16,7 @@
 		> .wp-block-media-text__media {
 			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( $mask_svg ) }');
 			mask-position: center;
-			mask-size: cover;
+			mask-size: contain;
 			mask-repeat: no-repeat;
 		}
 
