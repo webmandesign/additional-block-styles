@@ -71,6 +71,10 @@ If you have a suggestion for a new block style, please share it here in [support
 
 == Frequently Asked Questions ==
 
+= I have a suggestion! =
+
+If you have a suggestion for a new block style, please share it here in [support section](https://wordpress.org/support/plugin/additional-block-styles/) or in [GitHub repository issues](https://github.com/webmandesign/additional-block-styles/issues).
+
 = How does it work? =
 
 Once you enable the plugin, it will do its magic automatically. The plugin adds new block styles to WordPress native blocks in editor (Gutenberg).
@@ -81,11 +85,7 @@ With block styles you can change block appearance with one click. Simply choose 
 
 = There are no settings? =
 
-No :) It really just works.
-
-= Want to suggest a new block style? =
-
-If you have a suggestion for a new block style, please share it here in [support section](https://wordpress.org/support/plugin/additional-block-styles/) or in [GitHub repository issues](https://github.com/webmandesign/additional-block-styles/issues).
+No :) It really just works. Just check for new styles in each block styles list.
 
 = How to change shadow intensity? =
 
@@ -107,6 +107,14 @@ For example, apply this code into **Appearance → Customize → Additional CSS*
 `:root {
 	--abs_overlap_value: 150px;
 }`
+
+= Are there any custom blocks? =
+
+No. This plugin only registers new block styles, which means it only provides CSS code to style blocks differently. There is no custom block included in this plugin.
+
+= Are there any custom enhancements to blocks? =
+
+No. Just new block styles.
 
 
 == Changelog ==

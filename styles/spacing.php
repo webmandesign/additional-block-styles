@@ -25,15 +25,9 @@ Register::add_style(
 			'core/group',
 			'core/heading',
 			'core/image',
+			'core/latest-posts',
 			'core/media-text',
 			'core/paragraph',
-			'core/post-content',
-			'core/post-date',
-			'core/post-excerpt',
-			'core/post-featured-image',
-			'core/post-terms',
-			'core/post-title',
-			'core/query',
 		),
 	)
 );
