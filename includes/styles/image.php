@@ -13,10 +13,6 @@ namespace WebManDesign\ABS;
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$blocks = array(
-	'core/image',
-);
-
 Register::add_style(
 	'paint-brush',
 	array(

@@ -13,10 +13,6 @@ namespace WebManDesign\ABS;
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-$blocks = array(
-	'core/list',
-);
-
 Register::add_style(
 	'border-inner',
 	array(

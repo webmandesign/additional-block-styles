@@ -116,6 +116,29 @@ No. This plugin only registers new block styles, which means it only provides CS
 
 No. Just new block styles.
 
+= What styles are being added to what blocks? =
+
+Here is a list of block styles and blocks they apply on:
+
+- **Accessibly hidden** - Heading block
+- **Caption below** - Gallery block
+- **Double-line** - Separator block
+- **Drop shadow** - Columns, Column, Cover, Group, Image, Media & Text block
+- **Gradient** - Media & Text block
+- **Hide on tablet** - Column block
+- **Inner shadow** - Cover block
+- **Line separator** - Latest Posts and List block
+- **Media on top** - Media & Text block
+- **Modern bubble** - Quote block
+- **No gaps** - Columns and Gallery block
+- **No vertical gap** - Columns, Column, Cover, Gallery, Group, Heading, Image, Latest Posts, Media & Text and Paragraph block
+- **Overlap above/below** - Columns, Cover, Group, Image, Media & Text block
+- **Paint brush** - Image and Media & Text block
+- **Single column: align left/right** - Column block
+- **Stack on tablet** - Columns and Media & Text block
+- **Wavy** - Media & Text block
+- **Zigzag** - Separator block
+
 
 == Screenshots ==
 
