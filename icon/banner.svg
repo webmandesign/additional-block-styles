@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="772"
+   height="250"
+   viewBox="0 0 772 250"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="banner.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="banner-772x250.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#303030"
+     bordercolor="#c9c9c9"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="340.82547"
+     inkscape:cy="540.93669"
+     inkscape:current-layer="layer4"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-page="true"
+     borderlayer="true"
+     inkscape:showpageshadow="false">
+    <sodipodi:guide
+       position="198.5,210"
+       orientation="0,1"
+       id="guide5133"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="30,280"
+       orientation="-1,0"
+       id="guide5135"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="158,64"
+       orientation="0,1"
+       id="guide5137"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="342,149"
+       orientation="1,0"
+       id="guide6257" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient53177">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop53173" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop53175" />
+    </linearGradient>
+    <rect
+       x="30"
+       y="40"
+       width="337.5"
+       height="146"
+       id="rect10547" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6168"
+       x="-0.031578947"
+       y="-0.034985423"
+       width="1.0631579"
+       height="1.0758017">
+      <feFlood
+         flood-opacity="0.25098"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6158" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite6160" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur6162" />
+      <feOffset
+         dx="0"
+         dy="2"
+         result="offset"
+         id="feOffset6164" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite6166" />
+    </filter>
+    <rect
+       x="30"
+       y="40"
+       width="335.81615"
+       height="163.44394"
+       id="rect10547-3" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter6168-5"
+       x="-0.031578947"
+       y="-0.033566434"
+       width="1.0631579"
+       height="1.0727273">
+      <feFlood
+         flood-opacity="0.25098"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6158-3" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite6160-5" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="5"
+         result="blur"
+         id="feGaussianBlur6162-6" />
+      <feOffset
+         dx="0"
+         dy="2"
+         result="offset"
+         id="feOffset6164-0" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite6166-0" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient53177"
+       id="linearGradient53179"
+       x1="636.39612"
+       y1="-82.731491"
+       x2="636.39612"
+       y2="-13.435028"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0962896,0,0,0.28284271,-47.90698,23.8)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient53177"
+       id="linearGradient53263"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0962896,0,0,0.28284271,-47.90698,-226.2)"
+       x1="636.39612"
+       y1="-82.731491"
+       x2="636.39612"
+       y2="-13.435028" />
+    <rect
+       x="30"
+       y="40"
+       width="335.81615"
+       height="163.44394"
+       id="rect59932" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient53177"
+       id="linearGradient59938"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0962896,0,0,0.28284271,-527.90698,-626.2)"
+       x1="636.39612"
+       y1="-82.731491"
+       x2="636.39612"
+       y2="-13.435028" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient53177"
+       id="linearGradient59940"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0962896,0,0,0.28284271,-527.90698,423.8)"
+       x1="636.39612"
+       y1="-82.731491"
+       x2="636.39612"
+       y2="-13.435028" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF />
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="bg">
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59466"
+       width="772"
+       height="250"
+       x="0"
+       y="0"
+       inkscape:export-filename="banner-772x250.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59728"
+       width="772"
+       height="250"
+       x="0"
+       y="0"
+       inkscape:export-filename="banner-1544x500.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59888"
+       width="772"
+       height="250"
+       x="0"
+       y="400"
+       inkscape:export-filename="banner-772x250-rtl.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59890"
+       width="772"
+       height="250"
+       x="0"
+       y="400"
+       inkscape:export-filename="banner-1544x500-rtl.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="quote"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g6377"
+       style="fill:#1a1a1a;fill-opacity:1">
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect5150"
+         width="47.999996"
+         height="1.9999995"
+         x="2.1798271e-06"
+         y="214"
+         rx="0"
+         ry="0" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect5152"
+         width="206.00002"
+         height="1.9999995"
+         x="-216.00002"
+         y="0"
+         rx="0"
+         ry="0"
+         transform="rotate(-90)" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect5167"
+         width="36"
+         height="1.9999995"
+         x="-250"
+         y="46"
+         rx="0"
+         ry="0"
+         transform="rotate(-90)"
+         inkscape:transform-center-y="-18.000002"
+         inkscape:transform-center-x="1" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect5387"
+         width="50"
+         height="1.9999995"
+         x="-142.83559"
+         y="208.71782"
+         rx="0"
+         ry="0"
+         transform="rotate(-45)"
+         inkscape:transform-center-y="-18.384778"
+         inkscape:transform-center-x="-16.97057" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect5981"
+         width="350"
+         height="1.9999995"
+         x="0"
+         y="10"
+         rx="0"
+         ry="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       id="text10545"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:20px;line-height:150%;font-family:Poppins;-inkscape-font-specification:'Poppins Light';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect10547-3);fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1.12257px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.89081426,0,0,0.89081426,3.3083279,10.769233)"><tspan
+         x="30"
+         y="60"
+         id="tspan60270"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60268">Extend native WordPress blocks </tspan></tspan><tspan
+         x="30"
+         y="90"
+         id="tspan60274"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60272">with a set of creative and useful </tspan></tspan><tspan
+         x="30"
+         y="120"
+         id="tspan60278"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60276">custom block styles, no matter </tspan></tspan><tspan
+         x="30"
+         y="150"
+         id="tspan60282"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60280">the theme used. Take this quote </tspan></tspan><tspan
+         x="30"
+         y="180"
+         id="tspan60286"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60284">style as an example.</tspan></tspan></text>
+    <g
+       id="g59902"
+       style="fill:#1a1a1a;fill-opacity:1"
+       transform="matrix(-1,0,0,1,772,400)">
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect59892"
+         width="47.999996"
+         height="1.9999995"
+         x="2.1798271e-06"
+         y="214"
+         rx="0"
+         ry="0" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect59894"
+         width="206.00002"
+         height="1.9999995"
+         x="-216.00002"
+         y="0"
+         rx="0"
+         ry="0"
+         transform="rotate(-90)" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect59896"
+         width="36"
+         height="1.9999995"
+         x="-250"
+         y="46"
+         rx="0"
+         ry="0"
+         transform="rotate(-90)"
+         inkscape:transform-center-y="-18.000002"
+         inkscape:transform-center-x="1" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect59898"
+         width="50"
+         height="1.9999995"
+         x="-142.83559"
+         y="208.71782"
+         rx="0"
+         ry="0"
+         transform="rotate(-45)"
+         inkscape:transform-center-y="-18.384778"
+         inkscape:transform-center-x="-16.97057" />
+      <rect
+         style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+         id="rect59900"
+         width="350"
+         height="1.9999995"
+         x="0"
+         y="10"
+         rx="0"
+         ry="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       id="text59906"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:20px;line-height:150%;font-family:Poppins;-inkscape-font-specification:'Poppins Light';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect59932);fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:1.12257px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(0.89081426,0,0,0.89081426,425.30833,410.76923)"><tspan
+         x="30"
+         y="60"
+         id="tspan60290"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60288">Extend native WordPress blocks </tspan></tspan><tspan
+         x="30"
+         y="90"
+         id="tspan60294"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60292">with a set of creative and useful </tspan></tspan><tspan
+         x="30"
+         y="120"
+         id="tspan60298"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60296">custom block styles, no matter </tspan></tspan><tspan
+         x="30"
+         y="150"
+         id="tspan60302"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60300">the theme used. Take this quote </tspan></tspan><tspan
+         x="30"
+         y="180"
+         id="tspan60306"><tspan
+           style="font-weight:normal;-inkscape-font-specification:Poppins"
+           id="tspan60304">style as an example.</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="images"
+     style="display:inline"
+     sodipodi:insensitive="true">
+    <g
+       id="g5585"
+       transform="translate(357,-248)"
+       style="filter:url(#filter6168-5)">
+      <image
+         width="118.93805"
+         height="56"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-1.jpg"
+         id="image5457"
+         x="295"
+         y="398" />
+      <image
+         width="120"
+         height="121.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-2.png"
+         id="image5469"
+         x="35"
+         y="472"
+         inkscape:export-filename=".\image5469.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <image
+         width="120"
+         height="90"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-3.jpg"
+         id="image5481"
+         x="165"
+         y="438.5" />
+      <image
+         width="119.35135"
+         height="92"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-4.jpg"
+         id="image5493"
+         x="295"
+         y="464" />
+      <image
+         width="120"
+         height="57"
+         preserveAspectRatio="none"
+         xlink:href="includes/media-on-top-240.png"
+         id="image53340"
+         x="35"
+         y="405"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="53.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/paint-brush-240.png"
+         id="image53352"
+         x="35"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="83.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/portfolio-240.png"
+         id="image53364"
+         x="35"
+         y="311.5"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="43.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/quotes-240.png"
+         id="image53376"
+         x="165"
+         y="385"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="59.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/no-gaps-gallery.jpg"
+         id="image53845"
+         x="295"
+         y="236"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="127"
+         preserveAspectRatio="none"
+         xlink:href="includes/wavy.png"
+         id="image54004"
+         x="165"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="82.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/overlap.jpg"
+         id="image54084"
+         x="295"
+         y="305.5"
+         style="stroke-width:2" />
+    </g>
+    <g
+       id="g59930"
+       transform="translate(-35,152)"
+       style="filter:url(#filter6168-5)">
+      <image
+         width="118.93805"
+         height="56"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-1.jpg"
+         id="image59908"
+         x="295"
+         y="398" />
+      <image
+         width="120"
+         height="121.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-2.png"
+         id="image59910"
+         x="35"
+         y="472"
+         inkscape:export-filename=".\image5469.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <image
+         width="120"
+         height="90"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-3.jpg"
+         id="image59912"
+         x="165"
+         y="438.5" />
+      <image
+         width="119.35135"
+         height="92"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-4.jpg"
+         id="image59914"
+         x="295"
+         y="464" />
+      <image
+         width="120"
+         height="57"
+         preserveAspectRatio="none"
+         xlink:href="includes/media-on-top-240.png"
+         id="image59916"
+         x="35"
+         y="405"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="53.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/paint-brush-240.png"
+         id="image59918"
+         x="35"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="83.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/portfolio-240.png"
+         id="image59920"
+         x="35"
+         y="311.5"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="43.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/quotes-240.png"
+         id="image59922"
+         x="165"
+         y="385"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="59.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/no-gaps-gallery.jpg"
+         id="image59924"
+         x="295"
+         y="236"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="127"
+         preserveAspectRatio="none"
+         xlink:href="includes/wavy.png"
+         id="image59926"
+         x="165"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="82.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/overlap.jpg"
+         id="image59928"
+         x="295"
+         y="305.5"
+         style="stroke-width:2" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="image-cover"
+     sodipodi:insensitive="true">
+    <rect
+       style="opacity:1;fill:url(#linearGradient53179);fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect53097"
+       width="500"
+       height="20"
+       x="380"
+       y="0" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient53263);fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect53261"
+       width="500"
+       height="20"
+       x="380"
+       y="-250"
+       transform="scale(1,-1)" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient59940);fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59934"
+       width="500"
+       height="20"
+       x="-100"
+       y="400" />
+    <rect
+       style="opacity:1;fill:url(#linearGradient59938);fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
+       id="rect59936"
+       width="500"
+       height="20"
+       x="-100"
+       y="-650"
+       transform="scale(1,-1)" />
+  </g>
+</svg>
