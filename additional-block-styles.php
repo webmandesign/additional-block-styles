@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  Additional Block Styles
+ * Plugin Name:  Abs - Additional block styles
  * Plugin URI:   https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
  * Description:  Provides additional styles for WordPress native blocks.
  * Version:      1.0.0

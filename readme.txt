@@ -1,4 +1,4 @@
-=== Additional Block Styles ===
+=== Abs - Additional block styles ===
 
 Contributors:      webmandesign
 Donate link:       https://www.webmandesign.eu/contact/#donation
@@ -102,7 +102,7 @@ For example, apply this code into **Appearance → Customize → Additional CSS*
 
 You can use custom CSS to change styles to your specific needs.
 
-For example, apply this code into **Appearance → Customize → Additional CSS** to change overlap size:
+For example, apply this code into **Appearance → Customize → Additional CSS** to change overlap size in "Overlap above", "Overlap below" and "Gradient" block styles:
 
 `:root {
 	--abs_overlap_value: 150px;
@@ -115,6 +115,23 @@ No. This plugin only registers new block styles, which means it only provides CS
 = Are there any custom enhancements to blocks? =
 
 No. Just new block styles.
+
+
+== Screenshots ==
+
+1. Preview of "Wavy" Media & Text and right aligned column
+2. Gallery with "Caption below" style and "Modern bubble" quote
+3. Paint brushed image, list with line separator, overlapping content below and inner shadow styles preview
+4. Media & Text with "Media on top" style, ideal for presenting features or services, and zigzag separator style
+5. Preview of Image block styles
+6. Preview of Column block styles
+7. Preview of Gallery block styles
+8. Creating services list with Media & Text block and "Media on top" block styles
+9. Preview of List block styles
+10. Preview of Media & Text block styles and overlapping styles
+11. Preview of Quote block styles
+12. Preview of "No vertical gap" and "Inner shadow" styles
+13. Preview of Separator block styles
 
 
 == Changelog ==

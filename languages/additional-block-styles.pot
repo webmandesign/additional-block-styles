@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-03-29 15:33+0200\n"
+"POT-Creation-Date: 2022-03-30 01:37+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -40,102 +40,102 @@ msgstr ""
 msgid "Please upgrade and try again."
 msgstr ""
 
-#: styles/a11y.php:19
+#: includes/styles/a11y.php:19
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr ""
 
-#: styles/alignment.php:23
+#: includes/styles/alignment.php:23
 msgctxt "Block style label."
 msgid "Single column: align left"
 msgstr ""
 
-#: styles/alignment.php:31
+#: includes/styles/alignment.php:31
 msgctxt "Block style label."
 msgid "Single column: align right"
 msgstr ""
 
-#: styles/gallery.php:23
+#: includes/styles/gallery.php:23
 msgctxt "Block style label."
 msgid "Caption below"
 msgstr ""
 
-#: styles/image.php:23
+#: includes/styles/image.php:23
 msgctxt "Block style label."
 msgid "Paint brush"
 msgstr ""
 
-#: styles/image.php:34
+#: includes/styles/image.php:34
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr ""
 
-#: styles/lists.php:23
+#: includes/styles/lists.php:23
 msgctxt "Block style label."
 msgid "Line separator"
 msgstr ""
 
-#: styles/media-text.php:23
+#: includes/styles/media-text.php:23
 msgctxt "Block style label."
 msgid "Media on top"
 msgstr ""
 
-#: styles/media-text.php:31
+#: includes/styles/media-text.php:31
 msgctxt "Block style label."
 msgid "Gradient"
 msgstr ""
 
-#: styles/media-text.php:39
+#: includes/styles/media-text.php:39
 msgctxt "Block style label."
 msgid "Wavy"
 msgstr ""
 
-#: styles/others.php:19
+#: includes/styles/others.php:19
 msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: styles/overlap.php:28
+#: includes/styles/overlap.php:28
 msgctxt "Block style label."
 msgid "Overlap above"
 msgstr ""
 
-#: styles/overlap.php:36
+#: includes/styles/overlap.php:36
 msgctxt "Block style label."
 msgid "Overlap below"
 msgstr ""
 
-#: styles/quotes.php:19
+#: includes/styles/quotes.php:19
 msgctxt "Block style label."
 msgid "Modern bubble"
 msgstr ""
 
-#: styles/responsiveness.php:19
+#: includes/styles/responsiveness.php:19
 msgctxt "Block style label."
 msgid "Hide on tablet"
 msgstr ""
 
-#: styles/responsiveness.php:29
+#: includes/styles/responsiveness.php:29
 msgctxt "Block style label."
 msgid "Stack on tablet"
 msgstr ""
 
-#: styles/separator.php:23
+#: includes/styles/separator.php:23
 msgctxt "Block style label."
 msgid "Double-line"
 msgstr ""
 
-#: styles/separator.php:31
+#: includes/styles/separator.php:31
 msgctxt "Block style label."
 msgid "Zigzag"
 msgstr ""
 
-#: styles/spacing.php:19
+#: includes/styles/spacing.php:19
 msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr ""
 
-#: styles/spacing.php:44
+#: includes/styles/spacing.php:38
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr ""

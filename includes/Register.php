@@ -78,7 +78,7 @@ class Register {
 			 */
 			self::$use_important = (bool) apply_filters( 'abs/use_important', ABS_USE_IMPORTANT );
 
-			include_once ABS_PATH . 'styles/_index.php';
+			include_once ABS_PATH . 'includes/styles/_index.php';
 
 			self::register();
 
