@@ -22,13 +22,13 @@
      bordercolor="#c9c9c9"
      borderopacity="1"
      inkscape:pageshadow="0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="340.82547"
-     inkscape:cy="540.93669"
-     inkscape:current-layer="layer4"
+     inkscape:cx="295.57063"
+     inkscape:cy="823.77938"
+     inkscape:current-layer="layer2"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:snap-intersection-paths="true"
@@ -216,7 +216,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="bg">
+     inkscape:label="bg"
+     sodipodi:insensitive="true">
     <rect
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stop-color:#000000"
        id="rect59466"
@@ -327,29 +328,29 @@
        transform="matrix(0.89081426,0,0,0.89081426,3.3083279,10.769233)"><tspan
          x="30"
          y="60"
-         id="tspan60270"><tspan
+         id="tspan1055"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60268">Extend native WordPress blocks </tspan></tspan><tspan
+           id="tspan1053">Extend native WordPress blocks </tspan></tspan><tspan
          x="30"
          y="90"
-         id="tspan60274"><tspan
+         id="tspan1059"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60272">with a set of creative and useful </tspan></tspan><tspan
+           id="tspan1057">with a set of creative and useful </tspan></tspan><tspan
          x="30"
          y="120"
-         id="tspan60278"><tspan
+         id="tspan1063"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60276">custom block styles, no matter </tspan></tspan><tspan
+           id="tspan1061">custom block styles, no matter </tspan></tspan><tspan
          x="30"
          y="150"
-         id="tspan60282"><tspan
+         id="tspan1067"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60280">the theme used. Take this quote </tspan></tspan><tspan
+           id="tspan1065">the theme used. Take this quote </tspan></tspan><tspan
          x="30"
          y="180"
-         id="tspan60286"><tspan
+         id="tspan1071"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60284">style as an example.</tspan></tspan></text>
+           id="tspan1069">style as an example.</tspan></tspan></text>
     <g
        id="g59902"
        style="fill:#1a1a1a;fill-opacity:1"
@@ -414,36 +415,35 @@
        transform="matrix(0.89081426,0,0,0.89081426,425.30833,410.76923)"><tspan
          x="30"
          y="60"
-         id="tspan60290"><tspan
+         id="tspan1075"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60288">Extend native WordPress blocks </tspan></tspan><tspan
+           id="tspan1073">Extend native WordPress blocks </tspan></tspan><tspan
          x="30"
          y="90"
-         id="tspan60294"><tspan
+         id="tspan1079"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60292">with a set of creative and useful </tspan></tspan><tspan
+           id="tspan1077">with a set of creative and useful </tspan></tspan><tspan
          x="30"
          y="120"
-         id="tspan60298"><tspan
+         id="tspan1083"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60296">custom block styles, no matter </tspan></tspan><tspan
+           id="tspan1081">custom block styles, no matter </tspan></tspan><tspan
          x="30"
          y="150"
-         id="tspan60302"><tspan
+         id="tspan1087"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60300">the theme used. Take this quote </tspan></tspan><tspan
+           id="tspan1085">the theme used. Take this quote </tspan></tspan><tspan
          x="30"
          y="180"
-         id="tspan60306"><tspan
+         id="tspan1091"><tspan
            style="font-weight:normal;-inkscape-font-specification:Poppins"
-           id="tspan60304">style as an example.</tspan></tspan></text>
+           id="tspan1089">style as an example.</tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="images"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
        id="g5585"
        transform="translate(357,-248)"
@@ -646,6 +646,112 @@
          preserveAspectRatio="none"
          xlink:href="includes/overlap.jpg"
          id="image59928"
+         x="295"
+         y="305.5"
+         style="stroke-width:2" />
+    </g>
+    <g
+       id="g939"
+       transform="translate(-35,572)"
+       style="filter:url(#filter6168-5)"
+       inkscape:export-filename="screenshots.png"
+       inkscape:export-xdpi="192"
+       inkscape:export-ydpi="192">
+      <image
+         width="118.93805"
+         height="56"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-1.jpg"
+         id="image917"
+         x="295"
+         y="398" />
+      <image
+         width="120"
+         height="121.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-2.png"
+         id="image919"
+         x="35"
+         y="472"
+         inkscape:export-filename=".\image5469.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <image
+         width="120"
+         height="90"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-3.jpg"
+         id="image921"
+         x="165"
+         y="438.5" />
+      <image
+         width="119.35135"
+         height="92"
+         preserveAspectRatio="none"
+         xlink:href="includes/screenshot-4.jpg"
+         id="image923"
+         x="295"
+         y="464" />
+      <image
+         width="120"
+         height="57"
+         preserveAspectRatio="none"
+         xlink:href="includes/media-on-top-240.png"
+         id="image925"
+         x="35"
+         y="405"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="53.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/paint-brush-240.png"
+         id="image927"
+         x="35"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="83.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/portfolio-240.png"
+         id="image929"
+         x="35"
+         y="311.5"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="43.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/quotes-240.png"
+         id="image931"
+         x="165"
+         y="385"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="59.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/no-gaps-gallery.jpg"
+         id="image933"
+         x="295"
+         y="236"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="127"
+         preserveAspectRatio="none"
+         xlink:href="includes/wavy.png"
+         id="image935"
+         x="165"
+         y="248"
+         style="stroke-width:2" />
+      <image
+         width="120"
+         height="82.5"
+         preserveAspectRatio="none"
+         xlink:href="includes/overlap.jpg"
+         id="image937"
          x="295"
          y="305.5"
          style="stroke-width:2" />
