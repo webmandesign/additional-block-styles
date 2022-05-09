@@ -64,7 +64,8 @@ class Assets {
 	/**
 	 * Get contents of CSS file for specific block style.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.1.0
 	 *
 	 * @param  string $block_style
 	 * @param  string $file
@@ -105,6 +106,15 @@ class Assets {
 				$css = str_replace(
 					$rtl_values,
 					array( 'left', 'right' ),
+					$css
+				);
+			}
+
+			// Plugin option values.
+			foreach ( Options::$option_defaults as $key => $value ) {
+				$css = str_replace(
+					'%' . $key . '%',
+					Options::get( $key ),
 					$css
 				);
 			}

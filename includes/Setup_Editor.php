@@ -10,8 +10,6 @@
 
 namespace WebManDesign\ABS;
 
-use WebManDesign\ABS\Hook;
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 

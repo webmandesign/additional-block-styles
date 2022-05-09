@@ -2,7 +2,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.1.0
 //
 
 @import '../_setup/_index';
@@ -10,3 +11,21 @@
 $selector: '.wp-block-media-text' + $abs;
 
 @import 'includes/media-on-top';
+
+#{$selector} {
+	// Making it simpler to align image:
+
+	&.is-vertically-aligned-center > .wp-block-media-text__media {
+		text-align: center;
+	}
+
+	&.is-vertically-aligned-bottom > .wp-block-media-text__media {
+		text-align: $right;
+	}
+
+	&.has-background[class*="is-vertically-aligned-"] > .wp-block-media-text__media {
+		padding: ( $ratio +em ) 10%;
+		padding-bottom: 0;
+	}
+
+}

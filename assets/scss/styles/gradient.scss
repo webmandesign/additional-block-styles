@@ -2,7 +2,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.1.0
 //
 
 @import '../_setup/_index';
@@ -16,7 +17,7 @@
 				mask-image: linear-gradient(
 					to top,
 					rgba( #000, 0 ),
-					#000 var(--abs_overlap_value)
+					#000 var(--abs_overlap_gradient_value)
 				);
 			}
 
@@ -36,12 +37,12 @@
 					mask-image: linear-gradient(
 						to left,
 						rgba( #000, 0 ),
-						#000 var(--abs_overlap_value)
+						#000 var(--abs_overlap_gradient_value)
 					);
 				}
 
 				> .wp-block-media-text__content {
-					margin-left: calc( -1 * var(--abs_overlap_value) );
+					margin-left: calc( -1 * var(--abs_overlap_gradient_value) );
 					margin-right: 0;
 				}
 
@@ -54,12 +55,12 @@
 					mask-image: linear-gradient(
 						to right,
 						rgba( #000, 0 ),
-						#000 var(--abs_overlap_value)
+						#000 var(--abs_overlap_gradient_value)
 					);
 				}
 
 				> .wp-block-media-text__content {
-					margin-right: calc( -1 * var(--abs_overlap_value) );
+					margin-right: calc( -1 * var(--abs_overlap_gradient_value) );
 					margin-left: 0;
 				}
 

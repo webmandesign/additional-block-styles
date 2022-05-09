@@ -2,13 +2,14 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.1.0
 //
 
 #{$selector} {
 	display: block;
 
-	img {
+	> .wp-block-media-text__media img {
 		width: auto;
 		max-width: 100%;
 		height: auto;

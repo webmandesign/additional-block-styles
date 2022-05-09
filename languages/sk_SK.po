@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-03-30 01:37+0200\n"
-"PO-Revision-Date: 2022-03-30 01:37+0200\n"
+"POT-Creation-Date: 2022-05-09 18:36+0200\n"
+"PO-Revision-Date: 2022-05-09 18:36+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -43,6 +43,74 @@ msgstr ""
 msgid "Please upgrade and try again."
 msgstr "Aktualizujte a skúste to znova."
 
+#: includes/Options.php:114 includes/Options.php:155
+msgid "Abs - Additional Block Styles plugin settings"
+msgstr "Nastavenia pluginu Abs - Additional Block Styles"
+
+#: includes/Options.php:115
+msgid "Abs"
+msgstr "Abs"
+
+#: includes/Options.php:167
+msgid "Overlapping"
+msgstr "Prekrývanie"
+
+#: includes/Options.php:175
+msgid "Overlap value"
+msgstr "Hodnota prekrytia"
+
+#: includes/Options.php:184 includes/Options.php:214
+msgid "Set a positive value here."
+msgstr "Nastavte kladnú hodnotu."
+
+#. translators: %s: CSS style rule name with link to more details page at developer.mozilla.org.
+#: includes/Options.php:188 includes/Options.php:218 includes/Options.php:253
+#: includes/Options.php:279
+#, php-format
+msgid "You can use any value valid for %s CSS style."
+msgstr "Je možné použiť akúkoľvek hodnotu platnú pre CSS štýl %s."
+
+#. translators: %s: default plugin option value.
+#: includes/Options.php:194 includes/Options.php:224 includes/Options.php:259
+#: includes/Options.php:285
+#, php-format
+msgid "Default value: %s"
+msgstr "Pôvodná hodnota: %s"
+
+#: includes/Options.php:203
+msgid "Gradient overlap value"
+msgstr "Hodnota prekrytia prechodu"
+
+#: includes/Options.php:212
+msgid ""
+"This sets size of overlap gradient for \"Gradient\" styles of Media & Text "
+"block."
+msgstr ""
+"Nastavuje veľkosť prekrytia prechodu pre štýl \"Gradient\" bloku Médiá a "
+"Text."
+
+#: includes/Options.php:234
+msgid "Shadows"
+msgstr "Tiene"
+
+#: includes/Options.php:242
+msgid "Shadow blur radius"
+msgstr "Polomer rozostrenia tieňa"
+
+#: includes/Options.php:268
+msgid "Shadow opacity"
+msgstr "Nepriehľadnosť tieňa"
+
+#: includes/Options.php:328
+msgctxt "Plugin option default value label."
+msgid "Default:"
+msgstr "Pôvodná hodnota:"
+
+#: includes/Options.php:402
+msgctxt "Plugin action link."
+msgid "Settings"
+msgstr "Nastavenia"
+
 #: includes/styles/a11y.php:19
 msgctxt "Block style label."
 msgid "Accessibly hidden"
@@ -63,17 +131,17 @@ msgctxt "Block style label."
 msgid "Caption below"
 msgstr "Popis dole"
 
-#: includes/styles/image.php:23
+#: includes/styles/image.php:19
 msgctxt "Block style label."
 msgid "Paint brush"
 msgstr "Náter farbou"
 
-#: includes/styles/image.php:34
+#: includes/styles/image.php:30
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr "Vnútorný tieň"
 
-#: includes/styles/lists.php:23
+#: includes/styles/lists.php:19
 msgctxt "Block style label."
 msgid "Line separator"
 msgstr "Čiarový oddeľovač"

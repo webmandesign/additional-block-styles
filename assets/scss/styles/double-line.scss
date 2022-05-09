@@ -2,16 +2,20 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.1.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
-	background: none !important;
 	border: 0 !important;
 	border-top: 6px double !important;
 	mask-image: none !important;
+
+	body & {
+		background: none !important;
+	}
 
 	&::before,
 	&::after {

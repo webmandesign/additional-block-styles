@@ -36,13 +36,15 @@ class ABS_Autoload {
 	/**
 	 * Array of white-listed, allowed files for improved security.
 	 *
-	 * @since   1.0.0
-	 * @access  private
-	 * @var     array
+	 * @since    1.0.0
+	 * @version  1.1.0
+	 * @access   private
+	 * @var      array
 	 */
 	private static $allowed_files = array(
 		'/Assets.php',
 		'/Loader.php',
+		'/Options.php',
 		'/Register.php',
 		'/Setup_Editor.php',
 	);

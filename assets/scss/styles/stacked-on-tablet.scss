@@ -2,24 +2,29 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.1.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
 
-	@media (max-width: #{$breakpoint_tablet}) {
-		display: block;
-	}
+	&:not(.is-not-stacked-on-mobile) {
 
-	> *:not(:only-child),
-	> [class*="wp-block-"]:not(:only-child) {
 		@media (max-width: #{$breakpoint_tablet}) {
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
+			display: block;
 		}
+
+		> *:not(:only-child),
+		> [class*="wp-block-"]:not(:only-child) {
+			@media (max-width: #{$breakpoint_tablet}) {
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
 	}
 
 }

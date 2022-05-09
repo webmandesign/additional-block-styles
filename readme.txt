@@ -5,9 +5,9 @@ Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
 Requires at least: 5.8
-Tested up to:      5.9
+Tested up to:      6.0
 Requires PHP:      7.0
-Stable tag:        1.0.0
+Stable tag:        1.1.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block styles
@@ -66,7 +66,7 @@ If you have a suggestion for a new block style, please share it here in [support
 
 1. Unzip the plugin download file and upload `additional-block-styles` folder into the `/wp-content/plugins/` directory.
 2. Activate the plugin through the *"Plugins"* menu in WordPress.
-3. Plugin has no options, it works immediately after activation. It adds additional block styles into your WordPress block editor.
+3. Plugin works immediately after activation by adding additional block styles into your WordPress block editor. And you can customize plugin options on **Settings → Abs** screen.
 
 
 == Frequently Asked Questions ==
@@ -83,30 +83,17 @@ With block styles you can change block appearance with one click. Simply choose 
 
 → [Video tutorial about how to use block styles](https://vimeo.com/517486265).
 
-= There are no settings? =
+= Are there any plugin options? =
 
-No :) It really just works. Just check for new styles in each block styles list.
+Yes, you can set several of plugin's style properties on **Settings → Abs** screen.
 
 = How to change shadow intensity? =
 
-You can use custom CSS to change styles to your specific needs.
-
-For example, apply this code into **Appearance → Customize → Additional CSS** to modify block style shadows:
-
-`:root {
-	--abs_shadow_spread: 30px;
-	--abs_shadow_opacity: .5;
-}`
+You can set shadow properties in **Settings → Abs → Shadows** screen section.
 
 = How to change overlap size? =
 
-You can use custom CSS to change styles to your specific needs.
-
-For example, apply this code into **Appearance → Customize → Additional CSS** to change overlap size in "Overlap above", "Overlap below" and "Gradient" block styles:
-
-`:root {
-	--abs_overlap_value: 150px;
-}`
+You can set overlap size in **Settings → Abs → Overlapping** screen section.
 
 = Are there any custom blocks? =
 
@@ -163,6 +150,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Fixing bugs, improving "Media on top" style and adding options screen.
 
 = 1.0.0 =
 Initial release.

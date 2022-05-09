@@ -35,7 +35,8 @@ class Loader {
 	/**
 	 * After setup theme.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.1.0
 	 *
 	 * @return  void
 	 */
@@ -51,6 +52,7 @@ class Loader {
 		// Processing
 
 			Assets::init();
+			Options::init();
 			Register::init();
 			Setup_Editor::init();
 
