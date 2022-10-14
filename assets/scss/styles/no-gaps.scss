@@ -2,12 +2,14 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.2.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
+	--wp--style--block-gap: 0px;
 	gap: 0 !important;
 
 	> [class] {

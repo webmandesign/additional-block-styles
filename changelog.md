@@ -1,5 +1,25 @@
 # Additional Block Styles Changelog
 
+## 1.2.0, 20221014
+
+### Updated
+- Improving security
+
+### Fixed
+- Responsive block styles
+- No gaps style
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/styles/hidden-on-tablet.scss
+	assets/scss/styles/no-gaps.scss
+	assets/scss/styles/stacked-on-tablet.scss
+	includes/Assets.php
+	includes/Options.php
+
+
 ## 1.1.0, 20220509
 
 ### Added

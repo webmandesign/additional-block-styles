@@ -7,7 +7,7 @@ Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles
 Requires at least: 5.8
 Tested up to:      6.0
 Requires PHP:      7.0
-Stable tag:        1.1.0
+Stable tag:        1.2.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block styles

@@ -3,7 +3,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.1.0
+// @version  1.2.0
 //
 
 @import '../_setup/_index';
@@ -14,10 +14,11 @@
 		display: none;
 	}
 
-	&.wp-block-column.wp-block-column {
-		@media (min-width: 600px) and (max-width: 781px) {
+	&.wp-block-column {
+		@media (min-width: 600px) and (max-width: #{$breakpoint_tablet}) {
 
-			~ .wp-block-column {
+			~ .wp-block-column.wp-block-column.wp-block-column {
+				flex-grow: 1;
 				margin-#{$left}: 0;
 
 				&:nth-child(odd) {

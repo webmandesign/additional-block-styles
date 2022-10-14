@@ -138,7 +138,8 @@ class Options {
 	/**
 	 * Register setting options.
 	 *
-	 * @since  1.1.0
+	 * @since    1.1.0
+	 * @version  1.2.0
 	 *
 	 * @return  void
 	 */
@@ -155,7 +156,7 @@ class Options {
 					'description'       => esc_html__( 'Abs - Additional Block Styles plugin settings', 'additional-block-styles' ),
 					'default'           => self::$option_defaults,
 					'sanitize_callback' => function( $value ) {
-						return (array) $value;
+						return array_map( 'sanitize_text_field', (array) $value );
 					}
 				)
 			);
