@@ -2,18 +2,22 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.3.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
-	padding: 0 !important;
 	margin-left: 0;
 	margin-right: 0;
 	list-style-position: inside;
 
-	> li {
+	&:not(.has-background) {
+		padding: 0 !important;
+	}
+
+	li {
 		padding-top: $ratio_maj +em;
 		padding-bottom: $ratio_maj +em;
 		margin: 0;
@@ -24,6 +28,20 @@
 			border-bottom: 0;
 		}
 
+		li {
+
+			&:first-child {
+				margin-top: $ratio_maj +em;
+				border-top: 1px solid;
+				border-color: inherit;
+			}
+
+			&:last-child {
+				margin-bottom: -$ratio_maj +em;
+			}
+
+		}
+
 		> a:not(:hover):not(:focus) {
 			text-decoration: none;
 		}
@@ -31,7 +49,12 @@
 	}
 
 	@at-root ul#{&} {
-		list-style: none;
+
+		&,
+		ul {
+			list-style: none;
+		}
+
 	}
 
 	&.wp-block-latest-posts {
@@ -39,8 +62,8 @@
 		> li {
 			padding-top: $ratio +em;
 			padding-bottom: $ratio +em;
-			margin-top: 0;
-			margin-bottom: 0;
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
 		}
 
 		&.is-grid > li:last-child {

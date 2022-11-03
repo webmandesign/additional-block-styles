@@ -1,5 +1,21 @@
 # Additional Block Styles Changelog
 
+## 1.3.0, 20221103
+
+### Fixed
+- Compatibility with WordPress 6.1
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/editor.scss
+	assets/scss/styles/border-inner.scss
+	assets/scss/styles/no-gap-vertical.scss
+	assets/scss/styles/no-gaps.scss
+	assets/scss/styles/zigzag.scss
+
+
 ## 1.2.0, 20221014
 
 ### Updated

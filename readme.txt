@@ -5,9 +5,9 @@ Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
 Requires at least: 5.8
-Tested up to:      6.0
+Tested up to:      6.1
 Requires PHP:      7.0
-Stable tag:        1.2.0
+Stable tag:        1.3.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block styles
@@ -150,6 +150,12 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.3.0 =
+Fixing WordPress 6.1 compatibility.
+
+= 1.2.0 =
+Improving security, fixing responsive block styles and no gap style.
 
 = 1.1.0 =
 Fixing bugs, improving "Media on top" style and adding options screen.

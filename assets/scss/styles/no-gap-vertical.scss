@@ -2,12 +2,18 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.3.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
+
+	&,
+	> .wp-block-column {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
 }
