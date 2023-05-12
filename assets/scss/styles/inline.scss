@@ -1,0 +1,21 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.4.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .25em 1.25em;
+	padding-inline: 0 !important;
+	margin-inline: auto;
+	list-style: none !important;
+
+	li {
+		margin: 0 !important;
+	}
+}

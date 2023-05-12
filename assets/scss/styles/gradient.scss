@@ -20,7 +20,6 @@
 					#000 var(--abs_overlap_gradient_value)
 				);
 			}
-
 		}
 
 		@media (min-width: 601px) {
@@ -45,7 +44,6 @@
 					margin-left: calc( -1 * var(--abs_overlap_gradient_value) );
 					margin-right: 0;
 				}
-
 			}
 
 			&.has-media-on-the-right {
@@ -63,10 +61,7 @@
 					margin-right: calc( -1 * var(--abs_overlap_gradient_value) );
 					margin-left: 0;
 				}
-
 			}
-
 		}
-
 	}
 }

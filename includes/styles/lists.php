@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.4.0
  */
 
 namespace WebManDesign\ABS;
@@ -19,6 +20,17 @@ Register::add_style(
 		'label'  => _x( 'Line separator', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => array(
 			'core/latest-posts',
+			'core/list',
+		),
+	)
+);
+
+Register::add_style(
+	'inline',
+	array(
+		'label'  => _x( 'Inline', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => array(
+			'core/categories',
 			'core/list',
 		),
 	)

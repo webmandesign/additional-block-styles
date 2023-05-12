@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2022-05-09 18:36+0200\n"
-"PO-Revision-Date: 2022-05-09 18:36+0200\n"
+"POT-Creation-Date: 2023-05-12 18:39+0200\n"
+"PO-Revision-Date: 2023-05-12 18:42+0200\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -43,75 +43,79 @@ msgstr ""
 msgid "Please upgrade and try again."
 msgstr "Aktualizujte a skúste to znova."
 
-#: includes/Options.php:114 includes/Options.php:155
+#: includes/Options.php:117 includes/Options.php:159
 msgid "Abs - Additional Block Styles plugin settings"
 msgstr "Nastavenia pluginu Abs - Additional Block Styles"
 
-#: includes/Options.php:115
+#: includes/Options.php:118
 msgid "Abs"
 msgstr "Abs"
 
-#: includes/Options.php:167
+#: includes/Options.php:171
 msgid "Overlapping"
 msgstr "Prekrývanie"
 
-#: includes/Options.php:175
+#: includes/Options.php:179
 msgid "Overlap value"
 msgstr "Hodnota prekrytia"
 
-#: includes/Options.php:184 includes/Options.php:214
+#: includes/Options.php:188 includes/Options.php:216 includes/Options.php:246
 msgid "Set a positive value here."
 msgstr "Nastavte kladnú hodnotu."
 
 #. translators: %s: CSS style rule name with link to more details page at developer.mozilla.org.
-#: includes/Options.php:188 includes/Options.php:218 includes/Options.php:253
-#: includes/Options.php:279
+#: includes/Options.php:192 includes/Options.php:220 includes/Options.php:250
+#: includes/Options.php:285 includes/Options.php:311
 #, php-format
 msgid "You can use any value valid for %s CSS style."
 msgstr "Je možné použiť akúkoľvek hodnotu platnú pre CSS štýl %s."
 
 #. translators: %s: default plugin option value.
-#: includes/Options.php:194 includes/Options.php:224 includes/Options.php:259
-#: includes/Options.php:285
+#: includes/Options.php:198 includes/Options.php:226 includes/Options.php:256
+#: includes/Options.php:291 includes/Options.php:317
 #, php-format
 msgid "Default value: %s"
 msgstr "Pôvodná hodnota: %s"
 
-#: includes/Options.php:203
+#: includes/Options.php:207
+msgid "Pull left/right value"
+msgstr "Hodnota potiahnutia doľava/doprava"
+
+#: includes/Options.php:235
 msgid "Gradient overlap value"
 msgstr "Hodnota prekrytia prechodu"
 
-#: includes/Options.php:212
+#: includes/Options.php:244
 msgid ""
-"This sets size of overlap gradient for \"Gradient\" styles of Media & Text "
-"block."
+"This sets the size of overlap gradient for \"Gradient\" style of Media & "
+"Text block."
 msgstr ""
 "Nastavuje veľkosť prekrytia prechodu pre štýl \"Gradient\" bloku Médiá a "
 "Text."
 
-#: includes/Options.php:234
+#: includes/Options.php:266
 msgid "Shadows"
 msgstr "Tiene"
 
-#: includes/Options.php:242
+#: includes/Options.php:274
 msgid "Shadow blur radius"
 msgstr "Polomer rozostrenia tieňa"
 
-#: includes/Options.php:268
+#: includes/Options.php:300
 msgid "Shadow opacity"
 msgstr "Nepriehľadnosť tieňa"
 
-#: includes/Options.php:328
+#: includes/Options.php:360
 msgctxt "Plugin option default value label."
 msgid "Default:"
 msgstr "Pôvodná hodnota:"
 
-#: includes/Options.php:402
+#: includes/Options.php:434
 msgctxt "Plugin action link."
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: includes/styles/a11y.php:19
+#: includes/styles/a11y.php:20
 msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr "Prístupne skrytý"
@@ -131,20 +135,35 @@ msgctxt "Block style label."
 msgid "Caption below"
 msgstr "Popis dole"
 
-#: includes/styles/image.php:19
+#: includes/styles/image.php:20
 msgctxt "Block style label."
 msgid "Paint brush"
 msgstr "Náter farbou"
 
-#: includes/styles/image.php:30
+#: includes/styles/image.php:31
+msgctxt "Block style label."
+msgid "Flower"
+msgstr "Kvet"
+
+#: includes/styles/image.php:42
+msgctxt "Block style label."
+msgid "Oval"
+msgstr "Ovál"
+
+#: includes/styles/image.php:53
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr "Vnútorný tieň"
 
-#: includes/styles/lists.php:19
+#: includes/styles/lists.php:20
 msgctxt "Block style label."
 msgid "Line separator"
 msgstr "Čiarový oddeľovač"
+
+#: includes/styles/lists.php:31
+msgctxt "Block style label."
+msgid "Inline"
+msgstr "V rade"
 
 #: includes/styles/media-text.php:23
 msgctxt "Block style label."
@@ -161,20 +180,50 @@ msgctxt "Block style label."
 msgid "Wavy"
 msgstr "Vlnitý"
 
-#: includes/styles/others.php:19
+#: includes/styles/others.php:20
 msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr "Tieň"
 
+#: includes/styles/others.php:35
+msgctxt "Block style label."
+msgid "Curved"
+msgstr "Zakrivené"
+
+#: includes/styles/others.php:45
+msgctxt "Block style label."
+msgid "Curved top"
+msgstr "Zakrivený vrch"
+
+#: includes/styles/others.php:55
+msgctxt "Block style label."
+msgid "Curved bottom"
+msgstr "Zakrivené dno"
+
 #: includes/styles/overlap.php:28
 msgctxt "Block style label."
-msgid "Overlap above"
-msgstr "Prekrytie hore"
+msgid "Pull up"
+msgstr "Vytiahnuť nahor"
 
 #: includes/styles/overlap.php:36
 msgctxt "Block style label."
-msgid "Overlap below"
-msgstr "Prekrytie dole"
+msgid "Pull down"
+msgstr "Potiahnuť nadol"
+
+#: includes/styles/overlap.php:52
+msgctxt "Block style label."
+msgid "Pull left"
+msgstr "Potiahnuť doľava"
+
+#: includes/styles/overlap.php:60
+msgctxt "Block style label."
+msgid "Pull right"
+msgstr "Potiahnuť doprava"
+
+#: includes/styles/overlap.php:74
+msgctxt "Block style label."
+msgid "Pull left & right"
+msgstr "Potiahnuť doľava a doprava"
 
 #: includes/styles/quotes.php:19
 msgctxt "Block style label."
@@ -201,12 +250,12 @@ msgctxt "Block style label."
 msgid "Zigzag"
 msgstr "Cik-cak"
 
-#: includes/styles/spacing.php:19
+#: includes/styles/spacing.php:20
 msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr "Žiadna vertikálna medzera"
 
-#: includes/styles/spacing.php:38
+#: includes/styles/spacing.php:39
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr "Žiadne medzery"

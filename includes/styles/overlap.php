@@ -23,17 +23,55 @@ $blocks = array(
 
 // Caution: This causes some issues within full-aligned containers.
 Register::add_style(
-	'overlap-above',
+	'pull-up',
 	array(
-		'label'  => _x( 'Overlap above', 'Block style label.', 'additional-block-styles' ),
+		'label'  => _x( 'Pull up', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => $blocks,
 	)
 );
 
 Register::add_style(
-	'overlap-below',
+	'pull-down',
 	array(
-		'label'  => _x( 'Overlap below', 'Block style label.', 'additional-block-styles' ),
+		'label'  => _x( 'Pull down', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+$blocks = array(
+	'core/column',
+	'core/cover',
+	'core/group',
+	'core/heading',
+	'core/image',
+);
+
+Register::add_style(
+	'pull-left',
+	array(
+		'label'  => _x( 'Pull left', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'pull-right',
+	array(
+		'label'  => _x( 'Pull right', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+$blocks = array(
+	'core/column',
+	'core/group',
+	'core/image',
+);
+
+Register::add_style(
+	'pull-left-right',
+	array(
+		'label'  => _x( 'Pull left & right', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => $blocks,
 	)
 );

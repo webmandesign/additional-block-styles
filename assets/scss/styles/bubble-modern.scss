@@ -2,8 +2,10 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.4.0
 //
+@use 'sass:math';
 
 @import '../_setup/_index';
 
@@ -42,19 +44,17 @@
 				content: '';
 				position: absolute;
 				width: 12%;
-				#{$left}: $border_width / -2;
+				#{$left}: math.div( $border_width, -2 );
 				bottom: 0;
 				border-top: $border_width solid;
 			}
-
 		}
-
 	}
 
 	cite {
 		display: block;
 		position: relative;
-		padding-top: $ratio_min +rem;
+		padding-top: $ratio_min + rem;
 		padding-#{$left}: 6%;
 		margin-top: 2rem !important;
 
@@ -65,7 +65,7 @@
 			height: 2rem;
 			#{$left}: 12%;
 			bottom: calc( 100% + #{ $border_width } );
-			margin-#{$left}: $border_width / -2;
+			margin-#{$left}: math.div( $border_width, -2 );
 			border-#{$left}: $border_width solid;
 		}
 
@@ -77,9 +77,6 @@
 				transform: skewX( 45deg );
 				transform-origin: 0 100%;
 			}
-
 		}
-
 	}
-
 }

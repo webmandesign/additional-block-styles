@@ -5,9 +5,9 @@ Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
 Requires at least: 5.8
-Tested up to:      6.1
+Tested up to:      6.2
 Requires PHP:      7.0
-Stable tag:        1.3.0
+Stable tag:        1.4.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block styles
@@ -27,17 +27,17 @@ Display caption of gallery images below the image to create a portfolio-like app
 **Enhanced Media & Text**
 Enable creative transition between media and text containers. Also, display the media on top for easy feature or service display.
 
-**Paint brush effect**
-Give your Image and Media & Text blocks interesting, unique look with brushstroke effect.
+**Image effects**
+Give your Image and Media & Text blocks interesting, unique look with brushstroke, flower, or oval shape.
 
 **Overlap blocks**
-Overlap various (container) blocks over content above or below.
+Overlap various (container) blocks over content above or below. Or pull them left and right.
 
 **Modern quotes**
 A modern bubble style is provided for Quote block.
 
-**List items separator**
-Separate list items and latest posts with a border.
+**List items**
+Separate list items and latest posts with a border. Or display lists inline.
 
 **Remove gaps**
 You can remove gaps between columns or gallery images. Also, a useful style to remove vertical gap from various blocks is provided.
@@ -107,20 +107,22 @@ No. Just new block styles.
 
 Here is a list of block styles and blocks they apply on:
 
-- **Accessibly hidden** - Heading block
+- **Accessibly hidden** - Heading, Site Title and Site Tagline block
 - **Caption below** - Gallery block
+- **Curved/Curved top/Curved bottom** - Group block
 - **Double-line** - Separator block
 - **Drop shadow** - Columns, Column, Cover, Group, Image, Media & Text block
 - **Gradient** - Media & Text block
 - **Hide on tablet** - Column block
+- **Inline** - Categories and List block
 - **Inner shadow** - Cover block
 - **Line separator** - Latest Posts and List block
 - **Media on top** - Media & Text block
 - **Modern bubble** - Quote block
-- **No gaps** - Columns and Gallery block
+- **No gaps** - Columns, Gallery and Group block
 - **No vertical gap** - Columns, Column, Cover, Gallery, Group, Heading, Image, Latest Posts, Media & Text and Paragraph block
-- **Overlap above/below** - Columns, Cover, Group, Image, Media & Text block
-- **Paint brush** - Image and Media & Text block
+- **Paint brush/Flower/Oval** - Image and Media & Text block
+- **Pull up/down/left/right** - Columns, Cover, Group, Heading, Image, Media & Text block
 - **Single column: align left/right** - Column block
 - **Stack on tablet** - Columns and Media & Text block
 - **Wavy** - Media & Text block
@@ -142,6 +144,8 @@ Here is a list of block styles and blocks they apply on:
 11. Preview of Quote block styles
 12. Preview of "No vertical gap" and "Inner shadow" styles
 13. Preview of Separator block styles
+14. Horizontally pulled middle column and oval image style preview
+15. Flower and oval image style within curved group block
 
 
 == Changelog ==
@@ -150,6 +154,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.4.0 =
+Adding new styles, improving existing ones.
 
 = 1.3.0 =
 Fixing WordPress 6.1 compatibility.

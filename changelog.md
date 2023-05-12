@@ -1,5 +1,50 @@
 # Additional Block Styles Changelog
 
+## 1.4.0, 20230512
+
+### Added
+- "Inline" style for Categories and List block
+- "Pull left/right" styles for various blocks
+- "Curved" styles for Group block
+- "Flower" and "Oval" style for Image and Media & Text block
+
+### Updated
+- Enabling "No gaps" style for Group block
+- Enabling "Accessibly hidden" style for Site Title and Site Tagline block
+- Renaming "Overlap" to "Pull" styles
+- Improving CSS styles
+- Localization
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/editor.scss
+	assets/scss/global.scss
+	assets/scss/styles/border-inner.scss
+	assets/scss/styles/bubble-modern.scss
+	assets/scss/styles/curved-bottom.scss
+	assets/scss/styles/curved-top.scss
+	assets/scss/styles/curved.scss
+	assets/scss/styles/flower.scss
+	assets/scss/styles/inline.scss
+	assets/scss/styles/media-on-top.scss
+	assets/scss/styles/oval.scss
+	assets/scss/styles/pull-down.scss
+	assets/scss/styles/pull-left-right.scss
+	assets/scss/styles/pull-left.scss
+	assets/scss/styles/pull-right.scss
+	assets/scss/styles/pull-up.scss
+	assets/scss/styles/includes/_media-on-top.scss
+	includes/Options.php
+	includes/styles/a11y.php
+	includes/styles/image.php
+	includes/styles/lists.php
+	includes/styles/others.php
+	includes/styles/spacing.php
+	languages/*.*
+
+
 ## 1.3.0, 20221103
 
 ### Fixed

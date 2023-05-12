@@ -1,0 +1,20 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.4.0
+//
+
+@import '../_setup/_index';
+
+#{$abs} {
+
+	@media (min-width: #{$breakpoint_tablet}) {
+		position: relative;
+		margin-left: calc( -1 * var(--abs_overlap_inline_value) ) !important;
+
+		&:not(.wp-block-heading) {
+			box-shadow: var(--abs_drop_shadow);
+		}
+	}
+}

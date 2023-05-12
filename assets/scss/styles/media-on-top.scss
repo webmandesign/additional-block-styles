@@ -3,7 +3,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.1.0
+// @version  1.4.0
 //
 
 @import '../_setup/_index';
@@ -24,8 +24,7 @@ $selector: '.wp-block-media-text' + $abs;
 	}
 
 	&.has-background[class*="is-vertically-aligned-"] > .wp-block-media-text__media {
-		padding: ( $ratio +em ) 10%;
+		padding: ( $ratio + em ) 10%;
 		padding-bottom: 0;
 	}
-
 }

@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.1.0
+ * @since    1.1.0
+ * @version  1.4.0
  */
 
 namespace WebManDesign\ABS;
@@ -56,12 +57,14 @@ class Options {
 	/**
 	 * Default option values.
 	 *
-	 * @since   1.1.0
-	 * @access  public
-	 * @var     array
+	 * @since    1.1.0
+	 * @version  1.4.0
+	 * @access   public
+	 * @var      array
 	 */
 	public static $option_defaults = array(
 		'overlap_value'          => '100px',
+		'overlap_inline_value'   => 'min(10vw, 100px)',
 		'overlap_gradient_value' => '100px',
 		'shadow_blur'            => '1em',
 		'shadow_opacity'         => '.15',
@@ -139,7 +142,7 @@ class Options {
 	 * Register setting options.
 	 *
 	 * @since    1.1.0
-	 * @version  1.2.0
+	 * @version  1.4.0
 	 *
 	 * @return  void
 	 */
@@ -198,6 +201,34 @@ class Options {
 					)
 				);
 
+				$key = 'overlap_inline_value';
+				add_settings_field(
+					$key,
+					esc_html__( 'Pull left/right value', 'additional-block-styles' ),
+					__CLASS__ . '::form_field',
+					self::$admin_page_slug,
+					$section,
+					array(
+						'name'        => $key,
+						'id'          => $key,
+						'label_for'   => $key,
+						'description' =>
+							esc_html__( 'Set a positive value here.', 'additional-block-styles' )
+							. ' '
+							. sprintf(
+								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
+								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-left"><code>margin-left</code></a>'
+							)
+							. '<br>'
+							. sprintf(
+								/* translators: %s: default plugin option value. */
+								__( 'Default value: %s', 'additional-block-styles' ),
+								'<code>' . self::$option_defaults[ $key ] . '</code>'
+							),
+					)
+				);
+
 				$key = 'overlap_gradient_value';
 				add_settings_field(
 					$key,
@@ -210,7 +241,7 @@ class Options {
 						'id'          => $key,
 						'label_for'   => $key,
 						'description' =>
-							esc_html__( 'This sets size of overlap gradient for "Gradient" styles of Media & Text block.', 'additional-block-styles' )
+							esc_html__( 'This sets the size of overlap gradient for "Gradient" style of Media & Text block.', 'additional-block-styles' )
 							. ' '
 							. esc_html__( 'Set a positive value here.', 'additional-block-styles' )
 							. ' '

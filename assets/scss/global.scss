@@ -17,7 +17,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.1.0
+// @version  1.4.0
 //
 
 @import '_setup/_index';
@@ -26,6 +26,7 @@
 	// Customizable via plugin options:
 
 		--abs_overlap_value:          %overlap_value%;
+		--abs_overlap_inline_value:   %overlap_inline_value%;
 		--abs_overlap_gradient_value: %overlap_gradient_value%;
 
 		--abs_shadow_blur:    %shadow_blur%;
@@ -41,3 +42,17 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Mitigate for pull left/right within Media & Text.
+.wp-block-media-text__content {
+	position: relative;
+	z-index: 1;
+}
+
+// Backwards compatibility.
+
+	// @since  1.4.0
+	$abs: '[class*="-overlap-above"]';
+	@import 'styles/pull-up';
+	$abs: '[class*="-overlap-below"]';
+	@import 'styles/pull-down';

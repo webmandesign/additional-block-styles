@@ -3,7 +3,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.1.0
+// @version  1.4.0
 //
 
 #{$selector} {
@@ -17,16 +17,15 @@
 	}
 
 	> .wp-block-media-text__content {
-		padding: ( $ratio +em ) 0 0 !important;
+		padding: ( $ratio + em ) 0 0 !important;
 
 		> *:first-child {
 			margin-top: 0;
 		}
-
 	}
 
 	&.has-background > .wp-block-media-text__content {
-		padding: ( $ratio +em ) 10% !important;
+		padding: ( $ratio + em ) 10% !important;
 	}
 
 	&.is-image-fill > .wp-block-media-text__media {
@@ -35,7 +34,5 @@
 		> a {
 			min-height: $ratio_min * 100vh;
 		}
-
 	}
-
 }

@@ -3,7 +3,7 @@
  * Plugin Name:  Abs - Additional block styles
  * Plugin URI:   https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
  * Description:  Provides additional styles for WordPress native blocks.
- * Version:      1.3.0
+ * Version:      1.4.0
  * Author:       WebMan Design, Oliver Juhas
  * Author URI:   https://www.webmandesign.eu/
  * License:      GNU General Public License v3
@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 
 // Constants:
 
-	define( 'ABS_VERSION', '1.3.0' );
+	define( 'ABS_VERSION', '1.4.0' );
 	define( 'ABS_FILE', __FILE__ );
 	define( 'ABS_PATH', plugin_dir_path( ABS_FILE ) ); // Trailing slashed.
 	define( 'ABS_URL', plugin_dir_url( ABS_FILE ) ); // Trailing slashed.

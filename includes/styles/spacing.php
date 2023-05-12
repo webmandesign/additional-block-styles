@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.4.0
  */
 
 namespace WebManDesign\ABS;
@@ -39,6 +40,7 @@ Register::add_style(
 		'blocks' => array(
 			'core/columns',
 			'core/gallery',
+			'core/group',
 		),
 	)
 );
