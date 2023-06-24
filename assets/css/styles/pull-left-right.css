@@ -1,1 +1,1 @@
-@media (min-width:880px){.abs{position:relative;margin-inline:calc(-1 * var(--abs_overlap_inline_value))!important;-webkit-box-shadow:var(--abs_drop_shadow);box-shadow:var(--abs_drop_shadow);z-index:5}}
+@media (min-width:880px){.abs{position:relative;margin-inline:var(--abs_pull)!important;-webkit-box-shadow:var(--abs_drop_shadow);box-shadow:var(--abs_drop_shadow);z-index:5}}

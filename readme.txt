@@ -4,20 +4,20 @@ Contributors:      webmandesign
 Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
-Requires at least: 5.8
+Requires at least: 6.0
 Tested up to:      6.2
 Requires PHP:      7.0
-Stable tag:        1.4.0
+Stable tag:        1.5.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
-Tags:              webman, webman design, blocks, block editor, block styles
+Tags:              webman, webman design, blocks, block editor, block style
 
-Provides new additional creative block styles to WordPress native blocks.
+Provides new additional creative block styles for WordPress native blocks.
 
 
 == Description ==
 
-Provides new additional creative styles to your WordPress website native blocks in editor (Gutenberg). Simply activate the plugin and use newly available block styles (see "Frequently Asked Questions" for more info).
+Provides new additional creative styles for your WordPress website native blocks in editor (Gutenberg). Simply activate the plugin and use newly available block styles (see "Frequently Asked Questions" for more info).
 
 = List of included block styles: =
 
@@ -28,7 +28,7 @@ Display caption of gallery images below the image to create a portfolio-like app
 Enable creative transition between media and text containers. Also, display the media on top for easy feature or service display.
 
 **Image effects**
-Give your Image and Media & Text blocks interesting, unique look with brushstroke, flower, or oval shape.
+Give your Image and Media & Text blocks interesting, unique look with brushstroke, flower, blob or oval shape.
 
 **Overlap blocks**
 Overlap various (container) blocks over content above or below. Or pull them left and right.
@@ -77,15 +77,15 @@ If you have a suggestion for a new block style, please share it here in [support
 
 = How does it work? =
 
-Once you enable the plugin, it will do its magic automatically. The plugin adds new block styles to WordPress native blocks in editor (Gutenberg).
+Once you enable the plugin, it will do its magic automatically. The plugin adds new block styles for WordPress native blocks in editor (Gutenberg).
 
-With block styles you can change block appearance with one click. Simply choose your preferred style from block options in sidebar on page/post edit screen and you are done.
+With block styles you can change block appearance with one click. Simply choose your preferred style from block options in sidebar on the page/post edit screen and you are done.
 
 → [Video tutorial about how to use block styles](https://vimeo.com/517486265).
 
 = Are there any plugin options? =
 
-Yes, you can set several of plugin's style properties on **Settings → Abs** screen.
+Yes, you can set several of plugin's style properties and choose which block styles to enable on the **Settings → Abs** screen.
 
 = How to change shadow intensity? =
 
@@ -95,6 +95,10 @@ You can set shadow properties in **Settings → Abs → Shadows** screen section
 
 You can set overlap size in **Settings → Abs → Overlapping** screen section.
 
+= How to disable certain block styles? =
+
+You can toggle block styles in **Settings → Abs → Toggle block styles** screen section.
+
 = Are there any custom blocks? =
 
 No. This plugin only registers new block styles, which means it only provides CSS code to style blocks differently. There is no custom block included in this plugin.
@@ -102,31 +106,6 @@ No. This plugin only registers new block styles, which means it only provides CS
 = Are there any custom enhancements to blocks? =
 
 No. Just new block styles.
-
-= What styles are being added to what blocks? =
-
-Here is a list of block styles and blocks they apply on:
-
-- **Accessibly hidden** - Heading, Site Title and Site Tagline block
-- **Caption below** - Gallery block
-- **Curved/Curved top/Curved bottom** - Group block
-- **Double-line** - Separator block
-- **Drop shadow** - Columns, Column, Cover, Group, Image, Media & Text block
-- **Gradient** - Media & Text block
-- **Hide on tablet** - Column block
-- **Inline** - Categories and List block
-- **Inner shadow** - Cover block
-- **Line separator** - Latest Posts and List block
-- **Media on top** - Media & Text block
-- **Modern bubble** - Quote block
-- **No gaps** - Columns, Gallery and Group block
-- **No vertical gap** - Columns, Column, Cover, Gallery, Group, Heading, Image, Latest Posts, Media & Text and Paragraph block
-- **Paint brush/Flower/Oval** - Image and Media & Text block
-- **Pull up/down/left/right** - Columns, Cover, Group, Heading, Image, Media & Text block
-- **Single column: align left/right** - Column block
-- **Stack on tablet** - Columns and Media & Text block
-- **Wavy** - Media & Text block
-- **Zigzag** - Separator block
 
 
 == Screenshots ==
@@ -145,7 +124,7 @@ Here is a list of block styles and blocks they apply on:
 12. Preview of "No vertical gap" and "Inner shadow" styles
 13. Preview of Separator block styles
 14. Horizontally pulled middle column and oval image style preview
-15. Flower and oval image style within curved group block
+15. Flower, blog and oval image style within curved group block
 
 
 == Changelog ==
@@ -154,6 +133,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.5.0 =
+Adding new styles, options, improving CSS.
 
 = 1.4.0 =
 Adding new styles, improving existing ones.

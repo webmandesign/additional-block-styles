@@ -1,5 +1,43 @@
 # Additional Block Styles Changelog
 
+## 1.5.0, 20230624
+
+### Added
+- "Blob" style for Image and Media & Text block
+- Option to disable block styles
+
+### Updated
+- Removing obsolete code
+- Readme file info
+- CSS styles enqueuing
+- Enabling image block styles also for Featured Image block
+- Localization
+
+### Fixed
+- Editor styles
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/editor.scss
+	assets/scss/global.scss
+	assets/scss/styles/blob.scss
+	assets/scss/styles/pull-down.scss
+	assets/scss/styles/pull-left-right.scss
+	assets/scss/styles/pull-left.scss
+	assets/scss/styles/pull-right.scss
+	assets/scss/styles/pull-up.scss
+	includes/Assets.php
+	includes/Loader.php
+	includes/Options.php
+	includes/Register.php
+	includes/parts/field-type--checkboxes.php
+	includes/styles/image.php
+	includes/styles/overlap.php
+	languages/*.*
+
+
 ## 1.4.0, 20230512
 
 ### Added

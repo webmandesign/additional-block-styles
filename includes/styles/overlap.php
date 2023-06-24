@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\ABS;
@@ -19,6 +20,7 @@ $blocks = array(
 	'core/group',
 	'core/image',
 	'core/media-text',
+	'core/post-featured-image',
 );
 
 // Caution: This causes some issues within full-aligned containers.
@@ -44,6 +46,7 @@ $blocks = array(
 	'core/group',
 	'core/heading',
 	'core/image',
+	'core/post-featured-image',
 );
 
 Register::add_style(
@@ -66,6 +69,7 @@ $blocks = array(
 	'core/column',
 	'core/group',
 	'core/image',
+	'core/post-featured-image',
 );
 
 Register::add_style(

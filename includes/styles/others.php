@@ -19,12 +19,13 @@ Register::add_style(
 	array(
 		'label'  => _x( 'Drop shadow', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => array(
-			'core/columns',
 			'core/column',
+			'core/columns',
 			'core/cover',
 			'core/group',
 			'core/image',
 			'core/media-text',
+			'core/post-featured-image',
 		),
 	)
 );

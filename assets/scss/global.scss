@@ -17,10 +17,11 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.4.0
+// @version  1.5.0
 //
 
 @import '_setup/_index';
+@import '_tools/_index';
 
 :root {
 	// Customizable via plugin options:
@@ -31,6 +32,9 @@
 
 		--abs_shadow_blur:    %shadow_blur%;
 		--abs_shadow_opacity: %shadow_opacity%;
+
+	// Pull value:
+	--abs_pull: calc( -1 * var(--abs_overlap_value) );
 
 	// Shadows:
 	--abs_drop_shadow: 0 calc( var(--abs_shadow_blur) / 10 ) var(--abs_shadow_blur) #{ rgba( #000, var(--abs_shadow_opacity) ) };
@@ -52,7 +56,9 @@
 // Backwards compatibility.
 
 	// @since  1.4.0
-	$abs: '[class*="-overlap-above"]';
-	@import 'styles/pull-up';
-	$abs: '[class*="-overlap-below"]';
-	@import 'styles/pull-down';
+	[class*="-overlap-above"] {
+		@include pull( up );
+	}
+	[class*="-overlap-below"] {
+		@include pull( down );
+	}

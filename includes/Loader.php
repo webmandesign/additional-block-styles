@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\ABS;
@@ -36,7 +37,7 @@ class Loader {
 	 * After setup theme.
 	 *
 	 * @since    1.0.0
-	 * @version  1.1.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -52,9 +53,10 @@ class Loader {
 		// Processing
 
 			Assets::init();
-			Options::init();
 			Register::init();
 			Setup_Editor::init();
+
+			Options::init(); // Has to be after Register class.
 
 	} // /after_setup_theme
 

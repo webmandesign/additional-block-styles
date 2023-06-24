@@ -1,0 +1,55 @@
+//
+// Pull content styles.
+//
+// @since  1.0.0
+//
+// @param  string $direction
+//
+@mixin pull( $direction ) {
+
+	@if up == $direction {
+		position: relative;
+		margin-top: var(--abs_pull) !important;
+		margin-bottom: 0 !important;
+		z-index: 10;
+
+	} @else if down == $direction {
+		position: relative;
+		margin-top: 0 !important;
+		margin-bottom: var(--abs_pull) !important;
+		z-index: 10;
+
+		+ [class] { // Don't use `+ *` here. Better use something more specific.
+			z-index: 0;
+		}
+
+	} @else if left == $direction {
+		@media (min-width: #{$breakpoint_tablet}) {
+			position: relative;
+			margin-left: var(--abs_pull) !important;
+
+			&:not(.wp-block-heading) {
+				box-shadow: var(--abs_drop_shadow);
+			}
+		}
+
+	} @else if right == $direction {
+		@media (min-width: #{$breakpoint_tablet}) {
+			position: relative;
+			margin-right: var(--abs_pull) !important;
+
+			&:not(.wp-block-heading) {
+				box-shadow: var(--abs_drop_shadow);
+			}
+		}
+
+	} @else if left-right == $direction {
+		@media (min-width: #{$breakpoint_tablet}) {
+			position: relative;
+			margin-inline: var(--abs_pull) !important;
+			box-shadow: var(--abs_drop_shadow);
+			z-index: 5;
+		}
+
+	}
+}

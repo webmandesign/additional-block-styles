@@ -2,18 +2,13 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.4.0
+// @since    1.4.0
+// @version  1.5.0
 //
 
 @import '../_setup/_index';
+@import '../_tools/_index';
 
 #{$abs} {
-	position: relative;
-	margin-top: 0 !important;
-	margin-bottom: calc( -1 * var(--abs_overlap_value) ) !important;
-	z-index: 10;
-
-	+ [class] { // Don't use `+ *` here. Better use something more specific.
-		z-index: 0;
-	}
+	@include pull( down );
 }

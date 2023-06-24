@@ -5,7 +5,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.4.0
+// @version  1.5.0
 //
 
 @import '_setup/_index';
@@ -60,18 +60,15 @@
 		}
 	}
 
-	.wp-block-post-content [class*="-overlap-above"]:first-child,
-	.wp-block-post-content [class*="-pull-top"]:first-child {
-		--abs_overlap_value: 0;
+	.wp-block-post-content > [class*="-overlap-above"]:first-child,
+	.wp-block-post-content > [class*="-pull-up"]:first-child {
+		--abs_overlap_value: 0px;
+		--abs_pull: 0;
 	}
 }
 
 // In style preview only.
 body.editor-styles-wrapper {
-
-	[class*="-align"] {
-		max-width: 50%;
-	}
 
 	[class*="-media-on-top"] {
 		max-width: percentage( $ratio_min );
@@ -79,9 +76,10 @@ body.editor-styles-wrapper {
 	}
 
 	[class*="-overlap-"],
-	[class*="-pull-top"],
-	[class*="-pull-bottom"] {
-		--abs_overlap_value: 0;
+	[class*="-pull-up"],
+	[class*="-pull-down"] {
+		--abs_overlap_value: 0px;
+		--abs_pull: 0;
 	}
 
 	.wp-block-media-text[class*="-stacked-on-tablet"] {

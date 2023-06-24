@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2023-05-12 18:39+0200\n"
+"POT-Creation-Date: 2023-06-24 22:38+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -20,94 +20,88 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#. translators: 1: required WP version number, 2: available WP version number
-#: includes/Compatibility.php:70
-#, php-format
-msgid ""
-"The Additional Block Styles plugin requires at least WordPress version "
-"%1$s. You are running version %2$s."
-msgstr ""
-
-#. translators: 1: required PHP version number, 2: available PHP version number
-#: includes/Compatibility.php:79
-#, php-format
-msgid ""
-"The Additional Block Styles plugin requires at least PHP version %1$s. You "
-"are running version %2$s."
-msgstr ""
-
-#: includes/Compatibility.php:86
-msgid "Please upgrade and try again."
-msgstr ""
-
-#: includes/Options.php:117 includes/Options.php:159
+#: includes/Options.php:99 includes/Options.php:141
 msgid "Abs - Additional Block Styles plugin settings"
 msgstr ""
 
-#: includes/Options.php:118
+#: includes/Options.php:100
 msgid "Abs"
 msgstr ""
 
-#: includes/Options.php:171
+#: includes/Options.php:162
 msgid "Overlapping"
 msgstr ""
 
-#: includes/Options.php:179
+#: includes/Options.php:170
 msgid "Overlap value"
 msgstr ""
 
-#: includes/Options.php:188 includes/Options.php:216 includes/Options.php:246
+#: includes/Options.php:179 includes/Options.php:207 includes/Options.php:237
 msgid "Set a positive value here."
 msgstr ""
 
 #. translators: %s: CSS style rule name with link to more details page at developer.mozilla.org.
-#: includes/Options.php:192 includes/Options.php:220 includes/Options.php:250
-#: includes/Options.php:285 includes/Options.php:311
+#: includes/Options.php:183 includes/Options.php:211 includes/Options.php:241
+#: includes/Options.php:276 includes/Options.php:302
 #, php-format
 msgid "You can use any value valid for %s CSS style."
 msgstr ""
 
 #. translators: %s: default plugin option value.
-#: includes/Options.php:198 includes/Options.php:226 includes/Options.php:256
-#: includes/Options.php:291 includes/Options.php:317
+#: includes/Options.php:189 includes/Options.php:217 includes/Options.php:247
+#: includes/Options.php:282 includes/Options.php:308
 #, php-format
 msgid "Default value: %s"
 msgstr ""
 
-#: includes/Options.php:207
+#: includes/Options.php:198
 msgid "Pull left/right value"
 msgstr ""
 
-#: includes/Options.php:235
+#: includes/Options.php:226
 msgid "Gradient overlap value"
 msgstr ""
 
-#: includes/Options.php:244
+#: includes/Options.php:235
 msgid ""
 "This sets the size of overlap gradient for \"Gradient\" style of Media & "
 "Text block."
 msgstr ""
 
-#: includes/Options.php:266
+#: includes/Options.php:257
 msgid "Shadows"
 msgstr ""
 
-#: includes/Options.php:274
+#: includes/Options.php:265
 msgid "Shadow blur radius"
 msgstr ""
 
-#: includes/Options.php:300
+#: includes/Options.php:291
 msgid "Shadow opacity"
 msgstr ""
 
-#: includes/Options.php:360
+#: includes/Options.php:318
+msgid "Toggle block styles"
+msgstr ""
+
+#: includes/Options.php:331
+msgid "Enable/disable block styles"
+msgstr ""
+
+#: includes/Options.php:381
 msgctxt "Plugin option default value label."
 msgid "Default:"
 msgstr ""
 
-#: includes/Options.php:434
+#: includes/Options.php:492
 msgctxt "Plugin action link."
 msgid "Settings"
+msgstr ""
+
+#. translators: %s: list of block programmatic names.
+#: includes/parts/field-type--checkboxes.php:64
+#, php-format
+msgid "Related blocks: %s"
 msgstr ""
 
 #: includes/styles/a11y.php:20
@@ -130,12 +124,12 @@ msgctxt "Block style label."
 msgid "Caption below"
 msgstr ""
 
-#: includes/styles/image.php:20
+#: includes/styles/image.php:26
 msgctxt "Block style label."
 msgid "Paint brush"
 msgstr ""
 
-#: includes/styles/image.php:31
+#: includes/styles/image.php:34
 msgctxt "Block style label."
 msgid "Flower"
 msgstr ""
@@ -145,7 +139,12 @@ msgctxt "Block style label."
 msgid "Oval"
 msgstr ""
 
-#: includes/styles/image.php:53
+#: includes/styles/image.php:50
+msgctxt "Block style label."
+msgid "Blob"
+msgstr ""
+
+#: includes/styles/image.php:58
 msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr ""
@@ -180,42 +179,42 @@ msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: includes/styles/others.php:35
+#: includes/styles/others.php:36
 msgctxt "Block style label."
 msgid "Curved"
 msgstr ""
 
-#: includes/styles/others.php:45
+#: includes/styles/others.php:46
 msgctxt "Block style label."
 msgid "Curved top"
 msgstr ""
 
-#: includes/styles/others.php:55
+#: includes/styles/others.php:56
 msgctxt "Block style label."
 msgid "Curved bottom"
 msgstr ""
 
-#: includes/styles/overlap.php:28
+#: includes/styles/overlap.php:30
 msgctxt "Block style label."
 msgid "Pull up"
 msgstr ""
 
-#: includes/styles/overlap.php:36
+#: includes/styles/overlap.php:38
 msgctxt "Block style label."
 msgid "Pull down"
 msgstr ""
 
-#: includes/styles/overlap.php:52
+#: includes/styles/overlap.php:55
 msgctxt "Block style label."
 msgid "Pull left"
 msgstr ""
 
-#: includes/styles/overlap.php:60
+#: includes/styles/overlap.php:63
 msgctxt "Block style label."
 msgid "Pull right"
 msgstr ""
 
-#: includes/styles/overlap.php:74
+#: includes/styles/overlap.php:78
 msgctxt "Block style label."
 msgid "Pull left & right"
 msgstr ""

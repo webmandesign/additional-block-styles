@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\ABS;
@@ -14,6 +15,31 @@ namespace WebManDesign\ABS;
 defined( 'ABSPATH' ) || exit;
 
 class Assets {
+
+	/**
+	 * Block style CSS class prefix.
+	 *
+	 * @since    1.0.0
+	 * @version  1.5.0
+	 * @access   public
+	 * @var      string
+	 */
+	public static $prefix = 'abs-';
+
+	/**
+	 * Placeholder CSS selector.
+	 *
+	 * Can be used in CSS code and will be replaced
+	 * with actual block style CSS class.
+	 *
+	 * @see  assets/scss/_setup/_selectors.scss
+	 *
+	 * @since    1.0.0
+	 * @version  1.5.0
+	 * @access   public
+	 * @var      string
+	 */
+	public static $css_selector = '.abs';
 
 	/**
 	 * Initialization.
@@ -36,11 +62,18 @@ class Assets {
 	/**
 	 * Enqueue styles and scripts.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
 	public static function enqueue() {
+
+		// Variables
+
+			$styles = Register::get_styles_enabled();
+			$handle = 'wp-block-library';
+
 
 		// Processing
 
@@ -48,16 +81,57 @@ class Assets {
 			 * @see  assets/scss/global.scss for more info.
 			 */
 			wp_add_inline_style(
-				'wp-block-library',
-				self::get_css( '', ABS_PATH . 'assets/css/global.css' )
+				$handle,
+				'/* ABS styles start: */' . PHP_EOL
+				. self::get_css( '', ABS_PATH . 'assets/css/global.css' )
 			);
+
+			// Individual block styles.
+			foreach ( $styles as $block_style => $args ) {
+
+				$css = str_replace(
+					self::$css_selector,
+					'.is-style-' . sanitize_html_class( self::$prefix . $block_style ),
+					trim( Assets::get_css( $block_style ) )
+				);
+
+				/**
+				 * Filters whether to use `!important` in CSS styles globally.
+				 *
+				 * @since    1.0.0
+				 * @version  1.5.0
+				 *
+				 * @param  bool   $use_important
+				 * @param  string $block_style
+				 */
+				$use_important = (bool) apply_filters( 'abs/use_important', ABS_USE_IMPORTANT, $block_style );
+
+				// Remove `!important` if needed.
+				if ( false === $use_important ) {
+					$css = str_replace(
+						'!important',
+						'',
+						$css
+					);
+				}
+
+				wp_add_inline_style(
+					$handle,
+					$css
+				);
+			}
 
 			if ( doing_action( 'enqueue_block_editor_assets' ) ) {
 				wp_add_inline_style(
-					'wp-block-library',
+					$handle,
 					self::get_css( '', ABS_PATH . 'assets/css/editor.css' )
 				);
 			}
+
+			wp_add_inline_style(
+				$handle,
+				'/* /ABS styles end. */'
+			);
 
 	} // /enqueue
 
@@ -65,7 +139,7 @@ class Assets {
 	 * Get contents of CSS file for specific block style.
 	 *
 	 * @since    1.0.0
-	 * @version  1.2.0
+	 * @version  1.5.0
 	 *
 	 * @param  string $block_style
 	 * @param  string $file
@@ -111,12 +185,14 @@ class Assets {
 			}
 
 			// Plugin option values.
-			foreach ( Options::$option_defaults as $key => $value ) {
-				$css = str_replace(
-					'%' . $key . '%',
-					esc_attr( Options::get( $key ) ),
-					$css
-				);
+			foreach ( Options::get_defaults() as $key => $value ) {
+				if ( is_string( $value ) ) {
+					$css = str_replace(
+						'%' . $key . '%',
+						esc_attr( Options::get( $key ) ),
+						$css
+					);
+				}
 			}
 
 

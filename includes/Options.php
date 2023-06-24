@@ -6,12 +6,10 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.1.0
- * @version  1.4.0
+ * @version  1.5.0
  */
 
 namespace WebManDesign\ABS;
-
-use WebManDesign\ABS\Hook;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
@@ -53,22 +51,6 @@ class Options {
 	 * @var     string
 	 */
 	public static $option_name = 'abs';
-
-	/**
-	 * Default option values.
-	 *
-	 * @since    1.1.0
-	 * @version  1.4.0
-	 * @access   public
-	 * @var      array
-	 */
-	public static $option_defaults = array(
-		'overlap_value'          => '100px',
-		'overlap_inline_value'   => 'min(10vw, 100px)',
-		'overlap_gradient_value' => '100px',
-		'shadow_blur'            => '1em',
-		'shadow_opacity'         => '.15',
-	);
 
 	/**
 	 * Cache for saved options.
@@ -142,7 +124,7 @@ class Options {
 	 * Register setting options.
 	 *
 	 * @since    1.1.0
-	 * @version  1.4.0
+	 * @version  1.5.0
 	 *
 	 * @return  void
 	 */
@@ -157,9 +139,18 @@ class Options {
 				array(
 					'type'              => 'array',
 					'description'       => esc_html__( 'Abs - Additional Block Styles plugin settings', 'additional-block-styles' ),
-					'default'           => self::$option_defaults,
-					'sanitize_callback' => function( $value ) {
-						return array_map( 'sanitize_text_field', (array) $value );
+					'default'           => self::get_defaults(),
+					'sanitize_callback' => function( $option ) {
+
+						foreach ( (array) $option as $key => $value ) {
+							if ( 'toggle_block_styles' === $key ) {
+								$option[ $key ] = array_filter( (array) $option[ $key ] );
+							} else {
+								$option[ $key ] = sanitize_text_field( $option[ $key ] );
+							}
+						}
+
+						return $option;
 					}
 				)
 			);
@@ -196,7 +187,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: default plugin option value. */
 								__( 'Default value: %s', 'additional-block-styles' ),
-								'<code>' . self::$option_defaults[ $key ] . '</code>'
+								'<code>' . self::get_defaults( $key ) . '</code>'
 							),
 					)
 				);
@@ -224,7 +215,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: default plugin option value. */
 								__( 'Default value: %s', 'additional-block-styles' ),
-								'<code>' . self::$option_defaults[ $key ] . '</code>'
+								'<code>' . self::get_defaults( $key ) . '</code>'
 							),
 					)
 				);
@@ -254,7 +245,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: default plugin option value. */
 								__( 'Default value: %s', 'additional-block-styles' ),
-								'<code>' . self::$option_defaults[ $key ] . '</code>'
+								'<code>' . self::get_defaults( $key ) . '</code>'
 							),
 					)
 				);
@@ -289,7 +280,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: default plugin option value. */
 								__( 'Default value: %s', 'additional-block-styles' ),
-								'<code>' . self::$option_defaults[ $key ] . '</code>'
+								'<code>' . self::get_defaults( $key ) . '</code>'
 							),
 					)
 				);
@@ -315,8 +306,38 @@ class Options {
 							. sprintf(
 								/* translators: %s: default plugin option value. */
 								__( 'Default value: %s', 'additional-block-styles' ),
-								'<code>' . self::$option_defaults[ $key ] . '</code>'
+								'<code>' . self::get_defaults( $key ) . '</code>'
 							),
+					)
+				);
+
+			// Option for toggling styles.
+			$section = 'toggles';
+			add_settings_section(
+				$section,
+				esc_html__( 'Toggle block styles', 'additional-block-styles' ),
+				'',
+				self::$admin_page_slug
+			);
+
+				$key     = 'toggle_block_styles';
+				$choices = (array) Register::get_styles(); // Get all available block styles.
+				$choices = array_combine( array_keys( $choices ), array_column( $choices, 'label' ) );
+
+				asort( $choices );
+
+				add_settings_field(
+					$key,
+					esc_html__( 'Enable/disable block styles', 'additional-block-styles' ),
+					__CLASS__ . '::form_field',
+					self::$admin_page_slug,
+					$section,
+					array(
+						'name'      => $key,
+						'id'        => $key,
+						'label_for' => $key,
+						'type'      => 'checkboxes',
+						'choices'   => $choices,
 					)
 				);
 
@@ -357,7 +378,7 @@ class Options {
 					. '	id="' . esc_attr( $args['id'] ) . '"'
 					. '	name="' . esc_attr( self::$option_name . '[' . $args['name'] . ']' ) . '"'
 					. '	value="' . esc_attr( self::get( $args['name'] ) ) . '"'
-					. '	placeholder="' . esc_attr( _x( 'Default:', 'Plugin option default value label.', 'additional-block-styles' ) . ' ' . self::$option_defaults[ $args['name'] ] ) . '"'
+					. '	placeholder="' . esc_attr( _x( 'Default:', 'Plugin option default value label.', 'additional-block-styles' ) . ' ' . self::get_defaults( $args['name'] ) ) . '"'
 					. '	/>'
 					. '</p>';
 
@@ -397,24 +418,61 @@ class Options {
 		// Processing
 
 				if ( empty( self::$options ) ) {
-					self::$options = (array) get_option( self::$option_name, self::$option_defaults );
+					self::$options = (array) get_option( self::$option_name, self::get_defaults() );
 				}
 
 
-			// Output
+		// Output
 
-				if (
-					isset( self::$options[ $option ] )
-					&& '' !== trim( self::$options[ $option ] )
-				) {
-					return self::$options[ $option ];
-				} elseif ( isset( self::$option_defaults[ $option ] ) ) {
-					return self::$option_defaults[ $option ];
-				} else {
-					return null;
-				}
+			if (
+				isset( self::$options[ $option ] )
+				&& (
+					(
+						is_string( self::$options[ $option ] )
+						&& '' !== trim( self::$options[ $option ] )
+					)
+					|| is_array( self::$options[ $option ] )
+				)
+			) {
+				return self::$options[ $option ];
+			} else {
+				return self::get_defaults( $option );
+			}
 
 	} // /get
+
+	/**
+	 * Get default plugin option value.
+	 *
+	 * @since  1.5.0
+	 *
+	 * @param  string $option
+	 *
+	 * @return  mixed
+	 */
+	public static function get_defaults( string $option = null ) {
+
+		// Variables
+
+			$defaults = array(
+				'overlap_value'          => '100px',
+				'overlap_inline_value'   => 'min(10vw, 100px)',
+				'overlap_gradient_value' => '100px',
+				'shadow_blur'            => '1em',
+				'shadow_opacity'         => '.15',
+				'toggle_block_styles'    => array_keys( Register::get_styles() ),
+			);
+
+
+		// Output
+
+			if ( ! is_null( $option ) ) {
+				return ( isset( $defaults[ $option ] ) ) ? ( $defaults[ $option ] ) : ( null );
+			} else {
+				return $defaults;
+			}
+
+	} // /get_defaults
 
 	/**
 	 * Set plugin action links.
@@ -425,7 +483,7 @@ class Options {
 	 *
 	 * @return  array
 	 */
-	public static function plugin_action_links( array $links ) {
+	public static function plugin_action_links( array $links ): array {
 
 		// Processing
 
