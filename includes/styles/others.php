@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.4.0
+ * @version  1.6.0
  */
 
 namespace WebManDesign\ABS;
@@ -30,13 +30,19 @@ Register::add_style(
 	)
 );
 
+$blocks = array(
+	'core/cover',
+	'core/group',
+	'core/image',
+	'core/media-text',
+	'core/post-featured-image',
+);
+
 Register::add_style(
 	'curved',
 	array(
 		'label'  => _x( 'Curved', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => array(
-			'core/group',
-		),
+		'blocks' => $blocks,
 	)
 );
 
@@ -44,9 +50,7 @@ Register::add_style(
 	'curved-top',
 	array(
 		'label'  => _x( 'Curved top', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => array(
-			'core/group',
-		),
+		'blocks' => $blocks,
 	)
 );
 
@@ -54,8 +58,30 @@ Register::add_style(
 	'curved-bottom',
 	array(
 		'label'  => _x( 'Curved bottom', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => array(
-			'core/group',
-		),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'waves',
+	array(
+		'label'  => _x( 'Waves', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'waves-top',
+	array(
+		'label'  => _x( 'Top waves', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'waves-bottom',
+	array(
+		'label'  => _x( 'Bottom waves', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
 	)
 );

@@ -5,9 +5,9 @@ Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
 Requires at least: 6.0
-Tested up to:      6.2
+Tested up to:      6.3
 Requires PHP:      7.0
-Stable tag:        1.5.0
+Stable tag:        1.6.0
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block style
@@ -124,7 +124,7 @@ No. Just new block styles.
 12. Preview of "No vertical gap" and "Inner shadow" styles
 13. Preview of Separator block styles
 14. Horizontally pulled middle column and oval image style preview
-15. Flower, blog and oval image style within curved group block
+15. Flower, blob and oval image style within curved group block
 
 
 == Changelog ==
@@ -133,6 +133,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.6.0 =
+Making sure the plugin works with WordPress 6.3. Adding wavy edge style. Enabling "Curved" style also for images.
 
 = 1.5.0 =
 Adding new styles, options, improving CSS.

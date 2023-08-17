@@ -1,0 +1,25 @@
+//
+// @package    Additional Block Styles
+// @copyright  WebMan Design, Oliver Juhas
+//
+// @since  1.6.0
+//
+
+@import '../_setup/_index';
+@import '../_tools/_index';
+
+@supports ( mask-image: url('') ) {
+	#{$abs} {
+		// Lower:
+		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"><path d="M250 238s-17-13-38-10c-20 3-38 15-55 17s-35-13-55-12c-19 1-31 9-50 12-21 4-52-9-52-9V0h250v238Z"/></svg>';
+		// Higher:
+		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"><path d="M250 238s-17-20-38-17c-20 3-38 23-55 25s-35-19-55-18c-19 1-31 19-50 22-21 4-52-19-52-19V0h250v238Z"/></svg>';
+
+		&:not(.components-placeholder):not(.is-placeholder) {
+			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( $mask_svg ) }');
+			mask-position: center;
+			mask-size: 100% 100%;
+			mask-repeat: no-repeat;
+		}
+	}
+}

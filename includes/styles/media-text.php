@@ -36,7 +36,7 @@ Register::add_style(
 Register::add_style(
 	'wavy',
 	array(
-		'label'  => _x( 'Wavy', 'Block style label.', 'additional-block-styles' ),
+		'label'  => _x( 'Wavy split', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => $blocks,
 	)
 );

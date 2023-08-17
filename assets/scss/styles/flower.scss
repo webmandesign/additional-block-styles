@@ -2,7 +2,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.4.0
+// @since    1.4.0
+// @version  1.6.0
 //
 
 @import '../_setup/_index';
@@ -12,7 +13,8 @@
 	#{$abs} {
 		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"><path d="M148 70c7-12 18-27 25-33 11-12 29-12 40 0 12 11 11 29 0 40-6 7-21 18-33 25-49 55-89 31-32-32Zm32 32c14-3 32-6 41-6a29 29 0 0 1 0 58c-9 0-27-3-41-6-110-4-84-49 0-46Zm-32 78c3 14 6 32 6 41a29 29 0 0 1-58 0c0-9 3-27 6-41 13-106 54-63 46 0ZM102 70c-3-14-6-32-6-41a29 29 0 0 1 58 0c0 9-3 27-6 41-1 95-46 53-46 0Zm-65 7a29 29 0 0 1 0-40c11-12 29-12 40 0 7 6 18 21 25 33 27 23 32 87-32 32 55 2 20 47 0 46-14 3-32 6-41 6a29 29 0 0 1 0-58c9 0 27 3 41 6-12-7-27-18-33-25Zm143 71c12 7 27 18 33 25 12 11 12 29 0 40a29 29 0 0 1-40 0c-7-6-18-21-25-33-61-61-33-98 32-32Zm-78 32c-7 12-18 27-25 33a29 29 0 0 1-40 0 29 29 0 0 1 0-40c6-7 21-18 33-25 52-79 72-27 32 32Z" opacity=".9"/></svg>';
 
-		&.wp-block-image img,
+		> img,
+		> .components-resizable-box__container > img,
 		> .wp-block-media-text__media {
 			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( $mask_svg ) }');
 			mask-position: center;
