@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.0
+ * @version  1.6.0
  */
 
 namespace WebManDesign\ABS;
@@ -150,7 +150,8 @@ class Register {
 	/**
 	 * Gets only enabled block styles setup array.
 	 *
-	 * @since  1.5.0
+	 * @since    1.5.0
+	 * @version  1.6.0
 	 *
 	 * @return  array
 	 */
@@ -158,7 +159,7 @@ class Register {
 
 		// Variables
 
-			$enabled = array_filter( (array) Options::get( 'toggle_block_styles' ) );
+			$disabled = array_filter( (array) Options::get( 'disable_block_styles' ) );
 
 
 		// Output
@@ -180,7 +181,7 @@ class Register {
 			 *
 			 * @param  array $enabled_styles
 			 */
-			return array_filter( (array) apply_filters( 'abs/register/get_styles_enabled', array_intersect_key( self::get_styles(), array_flip( $enabled ) ) ) );
+			return array_filter( (array) apply_filters( 'abs/register/get_styles_enabled', array_diff_key( self::get_styles(), array_flip( $disabled ) ) ) );
 
 	} // /get_styles_enabled
 

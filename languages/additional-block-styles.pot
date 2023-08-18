@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2023-06-24 22:38+0200\n"
+"POT-Creation-Date: 2023-08-18 19:54+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -20,86 +20,86 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/Options.php:99 includes/Options.php:141
+#: includes/Options.php:102 includes/Options.php:173
 msgid "Abs - Additional Block Styles plugin settings"
 msgstr ""
 
-#: includes/Options.php:100
+#: includes/Options.php:103
 msgid "Abs"
 msgstr ""
 
-#: includes/Options.php:162
+#: includes/Options.php:194
 msgid "Overlapping"
 msgstr ""
 
-#: includes/Options.php:170
+#: includes/Options.php:202
 msgid "Overlap value"
 msgstr ""
 
-#: includes/Options.php:179 includes/Options.php:207 includes/Options.php:237
+#: includes/Options.php:211 includes/Options.php:239 includes/Options.php:269
 msgid "Set a positive value here."
 msgstr ""
 
 #. translators: %s: CSS style rule name with link to more details page at developer.mozilla.org.
-#: includes/Options.php:183 includes/Options.php:211 includes/Options.php:241
-#: includes/Options.php:276 includes/Options.php:302
+#: includes/Options.php:215 includes/Options.php:243 includes/Options.php:273
+#: includes/Options.php:308 includes/Options.php:334
 #, php-format
 msgid "You can use any value valid for %s CSS style."
 msgstr ""
 
 #. translators: %s: default plugin option value.
-#: includes/Options.php:189 includes/Options.php:217 includes/Options.php:247
-#: includes/Options.php:282 includes/Options.php:308
+#: includes/Options.php:221 includes/Options.php:249 includes/Options.php:279
+#: includes/Options.php:314 includes/Options.php:340
 #, php-format
 msgid "Default value: %s"
 msgstr ""
 
-#: includes/Options.php:198
+#: includes/Options.php:230
 msgid "Pull left/right value"
 msgstr ""
 
-#: includes/Options.php:226
+#: includes/Options.php:258
 msgid "Gradient overlap value"
 msgstr ""
 
-#: includes/Options.php:235
+#: includes/Options.php:267
 msgid ""
 "This sets the size of overlap gradient for \"Gradient\" style of Media & "
 "Text block."
 msgstr ""
 
-#: includes/Options.php:257
+#: includes/Options.php:289
 msgid "Shadows"
 msgstr ""
 
-#: includes/Options.php:265
+#: includes/Options.php:297
 msgid "Shadow blur radius"
 msgstr ""
 
-#: includes/Options.php:291
+#: includes/Options.php:323
 msgid "Shadow opacity"
 msgstr ""
 
-#: includes/Options.php:318
+#: includes/Options.php:350
 msgid "Toggle block styles"
 msgstr ""
 
-#: includes/Options.php:331
+#: includes/Options.php:364
 msgid "Enable/disable block styles"
 msgstr ""
 
-#: includes/Options.php:381
+#: includes/Options.php:415
 msgctxt "Plugin option default value label."
 msgid "Default:"
 msgstr ""
 
-#: includes/Options.php:492
+#: includes/Options.php:527
 msgctxt "Plugin action link."
 msgid "Settings"
 msgstr ""
 
 #. translators: %s: list of block programmatic names.
-#: includes/parts/field-type--checkboxes.php:64
+#: includes/parts/field-type--checkboxes.php:70
 #, php-format
 msgid "Related blocks: %s"
 msgstr ""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: includes/styles/media-text.php:39
 msgctxt "Block style label."
-msgid "Wavy"
+msgid "Wavy split"
 msgstr ""
 
 #: includes/styles/others.php:20
@@ -179,19 +179,34 @@ msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr ""
 
-#: includes/styles/others.php:36
+#: includes/styles/others.php:44
 msgctxt "Block style label."
 msgid "Curved"
 msgstr ""
 
-#: includes/styles/others.php:46
+#: includes/styles/others.php:52
 msgctxt "Block style label."
 msgid "Curved top"
 msgstr ""
 
-#: includes/styles/others.php:56
+#: includes/styles/others.php:60
 msgctxt "Block style label."
 msgid "Curved bottom"
+msgstr ""
+
+#: includes/styles/others.php:68
+msgctxt "Block style label."
+msgid "Waves"
+msgstr ""
+
+#: includes/styles/others.php:76
+msgctxt "Block style label."
+msgid "Top waves"
+msgstr ""
+
+#: includes/styles/others.php:84
+msgctxt "Block style label."
+msgid "Bottom waves"
 msgstr ""
 
 #: includes/styles/overlap.php:30

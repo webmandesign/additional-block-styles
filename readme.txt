@@ -54,6 +54,9 @@ Hide a column, or stack columns and Media & Text on tablet screens (in portrait 
 **Separator styles**
 New double line and zigzag separator styles are provided.
 
+**Edge sapes**
+Apply wavy top and bottom edge for multiple blocks (props to [CoBlocks plugin](https://wordpress.org/plugins/coblocks/) for inspiration).
+
 **Accessibility related styles**
 You can hide headings accessibly. They will still be accessible for assistive technology such as screen reader, but visually they'll be hidden.
 
@@ -125,6 +128,7 @@ No. Just new block styles.
 13. Preview of Separator block styles
 14. Horizontally pulled middle column and oval image style preview
 15. Flower, blob and oval image style within curved group block
+16. Wavy edges block
 
 
 == Changelog ==
@@ -135,7 +139,7 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 == Upgrade Notice ==
 
 = 1.6.0 =
-Making sure the plugin works with WordPress 6.3. Adding wavy edge style. Enabling "Curved" style also for images.
+Adding wavy edges style (make sure to check the plugin options page at Settings → Abs for enabled/disabled styles). Enabling "Curved" style also for images. Compatibility with WordPress 6.3.
 
 = 1.5.0 =
 Adding new styles, options, improving CSS.

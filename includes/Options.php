@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.1.0
- * @version  1.5.0
+ * @version  1.6.0
  */
 
 namespace WebManDesign\ABS;
@@ -64,7 +64,8 @@ class Options {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.1.0
+	 * @since    1.1.0
+	 * @version  1.6.0
 	 *
 	 * @return  void
 	 */
@@ -75,6 +76,8 @@ class Options {
 			// Actions
 
 				add_action( 'admin_menu', __CLASS__ . '::admin_menu' );
+
+				add_action( 'admin_enqueue_scripts', __CLASS__ . '::styles' );
 
 				add_action( 'admin_init', __CLASS__ . '::register_settings' );
 
@@ -106,6 +109,35 @@ class Options {
 	} // /admin_menu
 
 	/**
+	 * Options screen CSS styles.
+	 *
+	 * @since  1.6.0
+	 *
+	 * @param  string $hook
+	 *
+	 * @return  void
+	 */
+	public static function styles( string $hook ) {
+
+		// Requirements check
+
+			if ( 'settings_page_' . self::$admin_page_slug !== $hook ) {
+				return;
+			}
+
+
+		// Processing
+
+			wp_enqueue_style(
+				'abs-options',
+				ABS_URL . 'assets/css/options.css',
+				array(),
+				'v' . ABS_VERSION
+			);
+
+	} // /styles
+
+	/**
 	 * Render admin page.
 	 *
 	 * @since  1.1.0
@@ -124,7 +156,7 @@ class Options {
 	 * Register setting options.
 	 *
 	 * @since    1.1.0
-	 * @version  1.5.0
+	 * @version  1.6.0
 	 *
 	 * @return  void
 	 */
@@ -143,7 +175,7 @@ class Options {
 					'sanitize_callback' => function( $option ) {
 
 						foreach ( (array) $option as $key => $value ) {
-							if ( 'toggle_block_styles' === $key ) {
+							if ( 'disable_block_styles' === $key ) {
 								$option[ $key ] = array_filter( (array) $option[ $key ] );
 							} else {
 								$option[ $key ] = sanitize_text_field( $option[ $key ] );
@@ -181,7 +213,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
 								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
-								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-top"><code>margin-top</code></a>'
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-top"><code>margin-top</code><span aria-hidden="true">↗︎</span></a>'
 							)
 							. '<br>'
 							. sprintf(
@@ -209,7 +241,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
 								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
-								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-left"><code>margin-left</code></a>'
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-left"><code>margin-left</code><span aria-hidden="true">↗︎</span></a>'
 							)
 							. '<br>'
 							. sprintf(
@@ -239,7 +271,7 @@ class Options {
 							. sprintf(
 								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
 								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
-								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-left"><code>margin-left</code></a>'
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/margin-left"><code>margin-left</code><span aria-hidden="true">↗︎</span></a>'
 							)
 							. '<br>'
 							. sprintf(
@@ -274,7 +306,7 @@ class Options {
 							sprintf(
 								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
 								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
-								'<a href="https://developer.mozilla.org/docs/Web/CSS/box-shadow#values"><code>box-shadow &lt;blur-radius></code></a>'
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/box-shadow#values"><code>box-shadow &lt;blur-radius></code><span aria-hidden="true">↗︎</span></a>'
 							)
 							. '<br>'
 							. sprintf(
@@ -300,7 +332,7 @@ class Options {
 							sprintf(
 								/* translators: %s: CSS style rule name with link to more details page at developer.mozilla.org. */
 								__( 'You can use any value valid for %s CSS style.', 'additional-block-styles' ),
-								'<a href="https://developer.mozilla.org/docs/Web/CSS/opacity#values"><code>opacity</code></a>'
+								'<a href="https://developer.mozilla.org/docs/Web/CSS/opacity#values"><code>opacity</code><span aria-hidden="true">↗︎</span></a>'
 							)
 							. '<br>'
 							. sprintf(
@@ -320,7 +352,8 @@ class Options {
 				self::$admin_page_slug
 			);
 
-				$key     = 'toggle_block_styles';
+				$key = 'disable_block_styles';
+
 				$choices = (array) Register::get_styles(); // Get all available block styles.
 				$choices = array_combine( array_keys( $choices ), array_column( $choices, 'label' ) );
 
@@ -372,9 +405,12 @@ class Options {
 				include ABS_PATH . 'includes/parts/field-type--' . $args['type'] . '.php';
 			} else {
 
+				do_action( 'abs/options/field-type/text/before', $args );
+
 				echo '<p>'
 					. '<input'
 					. '	type="text"'
+					. '	class="abs-input-code"'
 					. '	id="' . esc_attr( $args['id'] ) . '"'
 					. '	name="' . esc_attr( self::$option_name . '[' . $args['name'] . ']' ) . '"'
 					. '	value="' . esc_attr( self::get( $args['name'] ) ) . '"'
@@ -400,6 +436,8 @@ class Options {
 						) )
 						. '</p>';
 				}
+
+				do_action( 'abs/options/field-type/text/after', $args );
 			}
 
 	} // /form_field
@@ -444,7 +482,8 @@ class Options {
 	/**
 	 * Get default plugin option value.
 	 *
-	 * @since  1.5.0
+	 * @since    1.5.0
+	 * @version  1.6.0
 	 *
 	 * @param  string $option
 	 *
@@ -460,7 +499,7 @@ class Options {
 				'overlap_gradient_value' => '100px',
 				'shadow_blur'            => '1em',
 				'shadow_opacity'         => '.15',
-				'toggle_block_styles'    => array_keys( Register::get_styles() ),
+				'disable_block_styles'   => array(),
 			);
 
 

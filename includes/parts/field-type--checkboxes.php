@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.5.0
+ * @since    1.5.0
+ * @version  1.6.0
  */
 
 namespace WebManDesign\ABS;
@@ -13,8 +14,15 @@ namespace WebManDesign\ABS;
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Getting disabled array, not enabled.
+ * This approach is plugin update future-proof.
+ * See CSS styles below for flipped `checked` styles.
+ */
 $value      = array_filter( (array) Options::get( $args['name'] ) );
 $all_styles = (array) Register::get_styles(); // Get all available block styles.
+
+do_action( 'abs/options/field-type/checkboxes/before', $args );
 
 ?>
 
@@ -77,7 +85,7 @@ $all_styles = (array) Register::get_styles(); // Get all available block styles.
 			. '	value="' . esc_attr( $style_name ) . '"'
 			. checked( in_array( $style_name, $value ), true, false )
 			. '	/>'
-			. '&nbsp;'
+			. '<span class="abs-input-switch"></span>'
 			. '<span>' . esc_attr( $style_label ) . '</span>'
 			. '</label>'
 			. '</li>';
@@ -85,38 +93,6 @@ $all_styles = (array) Register::get_styles(); // Get all available block styles.
 
 ?></ol>
 
-<style>
-	.abs-form-field-checkboxes {
-		display: grid;
-		column-gap: 2em;
-		grid-auto-columns: max-content;
-		max-width: 900px;
-		padding-inline: 0;
-		margin-inline: 0;
-		list-style: none;
-	}
+<?php
 
-	.abs-form-field-checkboxes li {
-		padding: 0;
-		margin: 0;
-		border: 1px solid transparent;
-		border-bottom: 1px dotted;
-	}
-
-	.abs-form-field-checkboxes li:hover {
-		border-inline-start-color: currentColor;
-	}
-
-	.abs-form-field-checkboxes label {
-		display: block;
-		padding: .5em;
-	}
-
-	@media (min-width: 480px) {
-		.abs-form-field-checkboxes { grid-template-columns: repeat( 2, auto ); }
-	}
-
-	@media (min-width: 1200px) {
-		.abs-form-field-checkboxes { grid-template-columns: repeat( 3, auto ); }
-	}
-</style>
+do_action( 'abs/options/field-type/checkboxes/after', $args );

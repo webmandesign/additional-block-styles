@@ -1,16 +1,17 @@
 # Additional Block Styles Changelog
 
-## 1.6.0, 20230818
+## 1.6.0, 20230819
 
 ### Added
-- Wavy edge style
+- Waves styles
 
 ### Updated
 - Enabling curved styles for image blocks
+- Options page functionality and styles
 - Localization
 
 ### Fixed
-- Editor styles
+- Future proofing toggling styles in plugin options
 
 ### File updates
 	additional-block-styles.php
