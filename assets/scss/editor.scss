@@ -5,7 +5,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.5.0
+// @version  1.6.0
 //
 
 @import '_setup/_index';
@@ -16,9 +16,11 @@
 	clip: auto !important;
 	clip-path: none !important;
 	width: auto !important;
-	height: auto !important;
+	height: 2em !important;
 	padding: 0 !important;
 	margin-block: 0 !important;
+	font-size: 1em;
+	line-height: 1;
 	background: none !important;
 	color: inherit !important;
 

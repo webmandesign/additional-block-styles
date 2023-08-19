@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.0
+ * @version  1.6.0
  */
 
 namespace WebManDesign\ABS;
@@ -63,7 +63,7 @@ class Assets {
 	 * Enqueue styles and scripts.
 	 *
 	 * @since    1.0.0
-	 * @version  1.5.0
+	 * @version  1.6.0
 	 *
 	 * @return  void
 	 */
@@ -73,6 +73,10 @@ class Assets {
 
 			$styles = Register::get_styles_enabled();
 			$handle = 'wp-block-library';
+
+			if ( ! defined( 'ABS_USE_IMPORTANT' ) ) {
+				define( 'ABS_USE_IMPORTANT', true );
+			}
 
 
 		// Processing

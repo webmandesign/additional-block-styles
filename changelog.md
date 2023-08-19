@@ -3,20 +3,44 @@
 ## 1.6.0, 20230819
 
 ### Added
-- Waves styles
+- Waves styles (props to CoBlocks plugin)
 
 ### Updated
+- Compatible with WordPress 6.3
 - Enabling curved styles for image blocks
 - Options page functionality and styles
+- Updating image shape styles
+- Improving CSS styles
+- Suffixing plugin block styles with " (Abs)"
 - Localization
 
 ### Fixed
 - Future proofing toggling styles in plugin options
+- Image shape block styles on Featured Image block
+- Curved styles border radius specificity
 
 ### File updates
 	additional-block-styles.php
 	changelog.md
 	readme.txt
+	assets/scss/editor.scss
+	assets/scss/options.scss
+	assets/scss/styles/blob.scss
+	assets/scss/styles/curved-bottom.scss
+	assets/scss/styles/curved-top.scss
+	assets/scss/styles/curved.scss
+	assets/scss/styles/flower.scss
+	assets/scss/styles/oval.scss
+	assets/scss/styles/paint-brush.scss
+	assets/scss/styles/waves-bottom.scss
+	assets/scss/styles/waves-top.scss
+	assets/scss/styles/waves.scss
+	includes/Assets.php
+	includes/Options.php
+	includes/Register.php
+	includes/parts/field-type--checkboxes.php
+	includes/styles/others.php
+	languages/*.*
 
 
 ## 1.5.0, 20230624

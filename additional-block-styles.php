@@ -34,10 +34,6 @@ define( 'ABS_FILE', __FILE__ );
 define( 'ABS_PATH', plugin_dir_path( ABS_FILE ) ); // Trailing slashed.
 define( 'ABS_URL', plugin_dir_url( ABS_FILE ) ); // Trailing slashed.
 
-if ( ! defined( 'ABS_USE_IMPORTANT' ) ) {
-	define( 'ABS_USE_IMPORTANT', true );
-}
-
 // Load the functionality.
 require_once ABS_PATH . 'includes/Autoload.php';
 WebManDesign\ABS\Loader::init();

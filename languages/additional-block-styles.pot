@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2023-08-18 19:54+0200\n"
+"POT-Creation-Date: 2023-08-19 11:05+0200\n"
 "PO-Revision-Date: 2015-05-12 20:39+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
@@ -88,18 +88,23 @@ msgstr ""
 msgid "Enable/disable block styles"
 msgstr ""
 
-#: includes/Options.php:415
+#: includes/Options.php:417
 msgctxt "Plugin option default value label."
 msgid "Default:"
 msgstr ""
 
-#: includes/Options.php:527
+#: includes/Options.php:531
 msgctxt "Plugin action link."
 msgid "Settings"
 msgstr ""
 
+#: includes/Register.php:81
+msgctxt "Block style label suffix. Plugin name abbreviation."
+msgid " (Abs)"
+msgstr ""
+
 #. translators: %s: list of block programmatic names.
-#: includes/parts/field-type--checkboxes.php:70
+#: includes/parts/field-type--checkboxes.php:72
 #, php-format
 msgid "Related blocks: %s"
 msgstr ""

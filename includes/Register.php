@@ -49,11 +49,18 @@ class Register {
 	 * Register block styles.
 	 *
 	 * @since    1.0.0
-	 * @version  1.5.0
+	 * @version  1.6.0
 	 *
 	 * @return  void
 	 */
 	public static function register() {
+
+		// Variables
+
+			if ( ! defined( 'ABS_USE_BLOCK_LABEL_SUFFIX' ) ) {
+				define( 'ABS_USE_BLOCK_LABEL_SUFFIX', true );
+			}
+
 
 		// Processing
 
@@ -68,6 +75,11 @@ class Register {
 
 				// Convert custom arguments array into actual style properties.
 				$style_properties = self::get_properties( $block_style, $args );
+
+				// Identify block styles from this plugin.
+				if ( ABS_USE_BLOCK_LABEL_SUFFIX ) {
+					$style_properties['label'] = $style_properties['label'] . esc_html_x( ' (Abs)', 'Block style label suffix. Plugin name abbreviation.', 'additional-block-styles' );
+				}
 
 				// Register block styles for each block.
 				foreach ( (array) $args['blocks'] as $block_name ) {
