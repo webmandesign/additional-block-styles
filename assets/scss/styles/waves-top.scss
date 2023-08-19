@@ -5,7 +5,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.6.0
+// @since    1.6.0
+// @version  1.6.1
 //
 
 @import '../_setup/_index';
@@ -13,15 +14,12 @@
 
 @supports ( mask-image: url('') ) {
 	#{$abs} {
-		// Lower:
-		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"><path d="M0 12s17 13 38 10C58 19 76 7 93 5s35 13 55 12c19-1 31-9 50-12 21-4 52 9 52 9v236H0V12Z"/></svg>';
-		// Higher:
-		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250"><path d="M250 250H0V12s17 20 38 17C58 26 76 6 93 4s35 19 55 18c19-1 31-19 50-22 21-4 52 19 52 19Z"/></svg>';
+		$mask_svg: '<svg xmlns="http://www.w3.org/2000/svg" width="250" height="1000"><path d="M250 1000H0V7s17 14 38 11C58 15 76 5 93 3s35 12 55 11c19-1 31-10 50-13 21-4 52 11 52 11v988Z"/></svg>';
 
 		&:not(.components-placeholder):not(.is-placeholder) {
 			mask-image: url('data:image/svg+xml;utf8,#{ _url_encode( $mask_svg ) }');
-			mask-position: center;
-			mask-size: 100% 100%;
+			mask-position: top;
+			mask-size: cover;
 			mask-repeat: no-repeat;
 		}
 	}

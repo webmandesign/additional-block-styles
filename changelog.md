@@ -1,5 +1,23 @@
 # Additional Block Styles Changelog
 
+## 1.6.1, 20230819
+
+### Updated
+- Enabling wavy edges and curves styles for Gallery block
+
+### Fixed
+- Wavy edges styles
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/styles/waves.scss
+	assets/scss/styles/waves-bottom.scss
+	assets/scss/styles/waves-top.scss
+	includes/styles/others.php
+
+
 ## 1.6.0, 20230819
 
 ### Added

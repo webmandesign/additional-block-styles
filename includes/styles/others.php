@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.6.0
+ * @version  1.6.1
  */
 
 namespace WebManDesign\ABS;
@@ -32,6 +32,7 @@ Register::add_style(
 
 $blocks = array(
 	'core/cover',
+	'core/gallery',
 	'core/group',
 	'core/image',
 	'core/media-text',

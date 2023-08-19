@@ -7,7 +7,7 @@ Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles
 Requires at least: 6.0
 Tested up to:      6.3
 Requires PHP:      7.0
-Stable tag:        1.6.0
+Stable tag:        1.6.1
 License:           GNU General Public License v3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block style
@@ -137,6 +137,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.6.1 =
+Enabling wavy edges style also for Gallery block. Fixing wavy edges styles.
 
 = 1.6.0 =
 Adding wavy edges style (make sure to check the plugin options page at Settings → Abs for enabled/disabled styles). Enabling "Curved" style also for images. Compatibility with WordPress 6.3.
