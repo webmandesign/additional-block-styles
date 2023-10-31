@@ -112,7 +112,8 @@ No. Just new block styles.
 
 = Can I modify plugin CSS variables via `theme.json` file? =
 
-Yes. You can set `settings.custom.abs` object such as follows:
+Yes. You can set `settings.custom.abs` object in your theme's `theme.json` file, such as follows:
+
 `"settings": {
 	"custom": {
 		"abs": {
