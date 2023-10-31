@@ -1,1 +1,1 @@
-@media (min-width:880px){.abs{position:relative;margin-left:var(--abs_pull)!important}.abs:not(.wp-block-heading){-webkit-box-shadow:var(--abs_drop_shadow);box-shadow:var(--abs_drop_shadow)}}
+@media (min-width:880px){.abs{position:relative;margin-left:var(--wp--custom--abs--pull)!important}.abs:not(.wp-block-heading){-webkit-box-shadow:var(--wp--custom--abs--drop-shadow);box-shadow:var(--wp--custom--abs--drop-shadow)}}

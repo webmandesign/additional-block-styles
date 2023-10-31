@@ -5,7 +5,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.6.0
+// @version  1.7.0
 //
 
 @import '_setup/_index';
@@ -16,25 +16,56 @@
 	clip: auto !important;
 	clip-path: none !important;
 	width: auto !important;
-	height: 2em !important;
-	padding: 0 !important;
+	height: auto !important;
+	padding: .5em !important;
 	margin-block: 0 !important;
-	font-size: 1em;
-	line-height: 1;
+	font-family: inherit !important;
+	font-weight: 500 !important;
+	font-size: .8em;
+	line-height: 1 !important;
 	background: none !important;
 	color: inherit !important;
+	border: 0 !important;
+	border-inline-start: .25em solid !important;
+	border-radius: .25em !important;
+	box-shadow: none !important;
 
 	&:not(:hover):not(:focus):not(:focus-within) {
+		background: repeating-linear-gradient(
+			-45deg,
+			rgba( #000, .1 ),
+			rgba( #000, .1 ) 5px,
+			rgba( #fff, .1 ) 5px,
+			rgba( #fff, .1 ) 10px
+		) !important;
 		opacity: .5;
-	}
 
-	&::before {
-		content: "🎧";
-		display: inline-block;
-		margin-inline-end: .5em;
-		speak: none;
+		.is-layout-flex:not(.is-vertical) & {
+			max-width: 6rem !important;
+			text-overflow: ellipsis;
+			white-space: nowrap !important;
+			overflow: hidden;
+		}
 	}
 }
+
+	.wp-block:hover > [class*="-screen-reader-text"],
+	.is-selected > [class*="-screen-reader-text"] {
+		@extend %a11y_hover_focus;
+	}
+
+	[class*="-screen-reader-text"] {
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			@extend %a11y_hover_focus;
+		}
+	}
+
+	%a11y_hover_focus {
+		opacity: 1 !important;
+	}
 
 .editor-styles-wrapper {
 
@@ -64,13 +95,13 @@
 
 	.wp-block-post-content > [class*="-overlap-above"]:first-child,
 	.wp-block-post-content > [class*="-pull-up"]:first-child {
-		--abs_overlap_value: 0px;
-		--abs_pull: 0;
+		--wp--custom--abs--overlap-value: 0px;
+		--wp--custom--abs--pull: 0;
 	}
 }
 
 // In style preview only.
-body.editor-styles-wrapper {
+.is-root-container:not(.wp-block-post-content) {
 
 	[class*="-media-on-top"] {
 		max-width: percentage( $ratio_min );
@@ -80,8 +111,8 @@ body.editor-styles-wrapper {
 	[class*="-overlap-"],
 	[class*="-pull-up"],
 	[class*="-pull-down"] {
-		--abs_overlap_value: 0px;
-		--abs_pull: 0;
+		--wp--custom--abs--overlap-value: 0px;
+		--wp--custom--abs--pull: 0px;
 	}
 
 	.wp-block-media-text[class*="-stacked-on-tablet"] {

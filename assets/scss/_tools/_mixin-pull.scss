@@ -1,7 +1,8 @@
 //
 // Pull content styles.
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.7.0
 //
 // @param  string $direction
 //
@@ -9,14 +10,14 @@
 
 	@if up == $direction {
 		position: relative;
-		margin-top: var(--abs_pull) !important;
+		margin-top: var(--wp--custom--abs--pull) !important;
 		margin-bottom: 0 !important;
 		z-index: 10;
 
 	} @else if down == $direction {
 		position: relative;
 		margin-top: 0 !important;
-		margin-bottom: var(--abs_pull) !important;
+		margin-bottom: var(--wp--custom--abs--pull) !important;
 		z-index: 10;
 
 		+ [class] { // Don't use `+ *` here. Better use something more specific.
@@ -26,28 +27,28 @@
 	} @else if left == $direction {
 		@media (min-width: #{$breakpoint_tablet}) {
 			position: relative;
-			margin-left: var(--abs_pull) !important;
+			margin-left: var(--wp--custom--abs--pull) !important;
 
 			&:not(.wp-block-heading) {
-				box-shadow: var(--abs_drop_shadow);
+				box-shadow: var(--wp--custom--abs--drop-shadow);
 			}
 		}
 
 	} @else if right == $direction {
 		@media (min-width: #{$breakpoint_tablet}) {
 			position: relative;
-			margin-right: var(--abs_pull) !important;
+			margin-right: var(--wp--custom--abs--pull) !important;
 
 			&:not(.wp-block-heading) {
-				box-shadow: var(--abs_drop_shadow);
+				box-shadow: var(--wp--custom--abs--drop-shadow);
 			}
 		}
 
 	} @else if left-right == $direction {
 		@media (min-width: #{$breakpoint_tablet}) {
 			position: relative;
-			margin-inline: var(--abs_pull) !important;
-			box-shadow: var(--abs_drop_shadow);
+			margin-inline: var(--wp--custom--abs--pull) !important;
+			box-shadow: var(--wp--custom--abs--drop-shadow);
 			z-index: 5;
 		}
 

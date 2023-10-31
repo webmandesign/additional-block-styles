@@ -3,7 +3,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.4.0
+// @version  1.7.0
 //
 @use 'sass:math';
 
@@ -13,8 +13,13 @@
 	$border_width: 2px;
 
 	position: relative;
-	padding: 0;
 	border: 0 !important;
+
+	&,
+	.editor-styles-wrapper & {
+		padding: 0;
+		background: none;
+	}
 
 	&::before,
 	&::after {

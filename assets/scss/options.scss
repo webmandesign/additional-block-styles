@@ -4,7 +4,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.6.0
+// @since    1.6.0
+// @version  1.7.0
 //
 
 .abs-input {
@@ -61,6 +62,7 @@
 	list-style: none;
 
 	li {
+		position: relative;
 		padding: 0;
 		margin: 0;
 		border: 1px solid transparent;
@@ -76,8 +78,13 @@
 		align-items: center;
 		gap: 1em;
 		padding: .75em .5em;
+		font-weight: 500;
 		overflow: hidden;
 	}
+
+		.has-description label {
+			align-items: flex-start;
+		}
 
 	input {
 		position: absolute;
@@ -102,10 +109,18 @@
 	}
 
 	@media (min-width: 480px) {
-		grid-template-columns: repeat( 2, auto );
+		grid-template-columns: repeat( 2, 1fr );
 	}
 
 	@media (min-width: 1200px) {
-		grid-template-columns: repeat( 3, auto );
+		grid-template-columns: repeat( 3, 1fr );
 	}
+}
+
+.abs-input-description {
+	display: block;
+	margin-top: .25em;
+	font-size: .9em;
+	font-weight: 400;
+	font-style: italic;
 }

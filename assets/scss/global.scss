@@ -17,7 +17,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.5.0
+// @version  1.7.0
 //
 
 @import '_setup/_index';
@@ -26,19 +26,19 @@
 :root {
 	// Customizable via plugin options:
 
-		--abs_overlap_value:          %overlap_value%;
-		--abs_overlap_inline_value:   %overlap_inline_value%;
-		--abs_overlap_gradient_value: %overlap_gradient_value%;
+		--wp--custom--abs--overlap-value:          %overlap_value%;
+		--wp--custom--abs--overlap-inline-value:   %overlap_inline_value%;
+		--wp--custom--abs--overlap-gradient-value: %overlap_gradient_value%;
 
-		--abs_shadow_blur:    %shadow_blur%;
-		--abs_shadow_opacity: %shadow_opacity%;
+		--wp--custom--abs--shadow-blur:    %shadow_blur%;
+		--wp--custom--abs--shadow-opacity: %shadow_opacity%;
 
 	// Pull value:
-	--abs_pull: calc( -1 * var(--abs_overlap_value) );
+	--wp--custom--abs--pull: calc( -1 * var(--wp--custom--abs--overlap-value) );
 
 	// Shadows:
-	--abs_drop_shadow: 0 calc( var(--abs_shadow_blur) / 10 ) var(--abs_shadow_blur) #{ rgba( #000, var(--abs_shadow_opacity) ) };
-	--abs_inner_shadow: inset 0 calc( 1.5 * var(--abs_shadow_blur) / 10 ) calc( 1.5 * var(--abs_shadow_blur) ) #{ rgba( #000, calc( 1.33 * var(--abs_shadow_opacity) ) ) };
+	--wp--custom--abs--drop-shadow: 0 calc( var(--wp--custom--abs--shadow-blur) / 10 ) var(--wp--custom--abs--shadow-blur) #{ rgba( #000, var(--wp--custom--abs--shadow-opacity) ) };
+	--wp--custom--abs--inner-shadow: inset 0 calc( 1.5 * var(--wp--custom--abs--shadow-blur) / 10 ) calc( 1.5 * var(--wp--custom--abs--shadow-blur) ) #{ rgba( #000, calc( 1.33 * var(--wp--custom--abs--shadow-opacity) ) ) };
 }
 
 // For columns alignment.

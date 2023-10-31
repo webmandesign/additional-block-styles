@@ -5,10 +5,10 @@ Donate link:       https://www.webmandesign.eu/contact/#donation
 Author URI:        https://www.webmandesign.eu
 Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles-wordpress-plugin/
 Requires at least: 6.0
-Tested up to:      6.3
+Tested up to:      6.4
 Requires PHP:      7.0
-Stable tag:        1.6.1
-License:           GNU General Public License v3
+Stable tag:        1.7.0
+License:           GPL-3.0-or-later
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block style
 
@@ -110,6 +110,24 @@ No. This plugin only registers new block styles, which means it only provides CS
 
 No. Just new block styles.
 
+= Can I modify plugin CSS variables via `theme.json` file? =
+
+Yes. You can set `settings.custom.abs` object such as follows:
+`"settings": {
+	"custom": {
+		"abs": {
+			"overlap-value": "100px",
+			"overlap-inline-value": "min(10vw, 100px)",
+			"overlap-gradient-value": "100px",
+			"shadow-blur": "1em",
+			"shadow-opacity": ".15",
+			"pull": "calc( -1 * var(--wp--custom--abs--overlap-value) )",
+			"drop-shadow": "0 calc(var(--wp--custom--abs--shadow-blur) / 10) var(--wp--custom--abs--shadow-blur) rgba(0,0,0, var(--wp--custom--abs--shadow-opacity))",
+			"inner-shadow": "inset 0 calc(1.5 * var(--wp--custom--abs--shadow-blur) / 10) calc(1.5 * var(--wp--custom--abs--shadow-blur)) rgba(0,0,0, calc(1.33 * var(--wp--custom--abs--shadow-opacity)) )"
+		}
+	}
+}`
+
 
 == Screenshots ==
 
@@ -138,26 +156,5 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 == Upgrade Notice ==
 
-= 1.6.1 =
-Enabling wavy edges style also for Gallery block. Fixing wavy edges styles.
-
-= 1.6.0 =
-Adding wavy edges style (make sure to check the plugin options page at Settings → Abs for enabled/disabled styles). Enabling "Curved" style also for images. Compatibility with WordPress 6.3.
-
-= 1.5.0 =
-Adding new styles, options, improving CSS.
-
-= 1.4.0 =
-Adding new styles, improving existing ones.
-
-= 1.3.0 =
-Fixing WordPress 6.1 compatibility.
-
-= 1.2.0 =
-Improving security, fixing responsive block styles and no gap style.
-
-= 1.1.0 =
-Fixing bugs, improving "Media on top" style and adding options screen.
-
-= 1.0.0 =
-Initial release.
+= 1.7.0 =
+Adding image flipping style, renaming CSS variables for `theme.json` compatibility, improving options page, updating and fixing editor styles, fixing "Modern bubble" quote style.

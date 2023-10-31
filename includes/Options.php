@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.1.0
- * @version  1.6.0
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -156,7 +156,7 @@ class Options {
 	 * Register setting options.
 	 *
 	 * @since    1.1.0
-	 * @version  1.6.0
+	 * @version  1.7.0
 	 *
 	 * @return  void
 	 */
@@ -355,7 +355,6 @@ class Options {
 				$key = 'disable_block_styles';
 
 				$choices = (array) Register::get_styles(); // Get all available block styles.
-				$choices = array_combine( array_keys( $choices ), array_column( $choices, 'label' ) );
 
 				asort( $choices );
 

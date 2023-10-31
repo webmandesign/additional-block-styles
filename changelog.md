@@ -1,5 +1,43 @@
 # Additional Block Styles Changelog
 
+## 1.7.0, 20231031
+
+### Added
+- "Flip horizontally/vertically" style for Image blocks
+
+### Updated
+- Renaming CSS variables so they can be overridden via `theme.json` file
+- Adding description to some styles on plugin options page
+- Screen reader text styles in editor
+- Localization
+
+### Fixed
+- Editor styles
+- "Modern bubble" quote style
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/editor.scss
+	assets/scss/global.scss
+	assets/scss/options.scss
+	assets/scss/_tools/_mixin-pull.scss
+	assets/scss/styles/bubble-modern.scss
+	assets/scss/styles/drop-shadow.scss
+	assets/scss/styles/flip-horizontally.scss
+	assets/scss/styles/flip-vertically.scss
+	assets/scss/styles/gradient.scss
+	assets/scss/styles/inset-shadow.scss
+	includes/Assets.php
+	includes/Options.php
+	includes/parts/field-type--checkboxes.php
+	includes/styles/alignment.php
+	includes/styles/image.php
+	includes/styles/others.php
+	includes/styles/spacing.php
+
+
 ## 1.6.1, 20230819
 
 ### Updated

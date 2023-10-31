@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Additional Block Styles\n"
 "Report-Msgid-Bugs-To: https://support.webmandesign.eu\n"
-"POT-Creation-Date: 2023-08-19 11:05+0200\n"
-"PO-Revision-Date: 2023-08-19 11:06+0200\n"
+"POT-Creation-Date: 2023-10-31 07:31+0100\n"
+"PO-Revision-Date: 2023-10-31 07:32+0100\n"
 "Last-Translator: Oliver Juhas, WebMan Design\n"
 "Language-Team: WebMan Design\n"
 "Language: sk_SK\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -85,16 +85,16 @@ msgstr "Nepriehľadnosť tieňa"
 msgid "Toggle block styles"
 msgstr "Spínanie štýlov blokov"
 
-#: includes/Options.php:364
+#: includes/Options.php:363
 msgid "Enable/disable block styles"
 msgstr "Povoliť/zakázať štýly blokov"
 
-#: includes/Options.php:417
+#: includes/Options.php:416
 msgctxt "Plugin option default value label."
 msgid "Default:"
 msgstr "Pôvodná hodnota:"
 
-#: includes/Options.php:531
+#: includes/Options.php:530
 msgctxt "Plugin action link."
 msgid "Settings"
 msgstr "Nastavenia"
@@ -115,12 +115,17 @@ msgctxt "Block style label."
 msgid "Accessibly hidden"
 msgstr "Prístupne skrytý"
 
-#: includes/styles/alignment.php:23
+#: includes/styles/alignment.php:24
 msgctxt "Block style label."
 msgid "Single column: align left"
 msgstr "Jediný stĺpec: zarovnať doľava"
 
-#: includes/styles/alignment.php:31
+#: includes/styles/alignment.php:25 includes/styles/alignment.php:34
+msgctxt "Block style label."
+msgid "Could be replaced using Row (Group) block."
+msgstr "Možné nahradiť pomocou bloku Riadok (Skupina)."
+
+#: includes/styles/alignment.php:33
 msgctxt "Block style label."
 msgid "Single column: align right"
 msgstr "Jediný stĺpec: zarovnať doprava"
@@ -155,6 +160,21 @@ msgctxt "Block style label."
 msgid "Inner shadow"
 msgstr "Vnútorný tieň"
 
+#: includes/styles/image.php:59 includes/styles/others.php:21
+msgctxt "Block style label."
+msgid "Not needed if block shadow options are supported."
+msgstr "Nepotrebné, ak sú podporované možnosti tieňa bloku."
+
+#: includes/styles/image.php:74
+msgctxt "Block style label."
+msgid "Flip horizontally"
+msgstr "Prevrátiť vodorovne"
+
+#: includes/styles/image.php:82
+msgctxt "Block style label."
+msgid "Flip vertically"
+msgstr "Prevrátiť zvislo"
+
 #: includes/styles/lists.php:20
 msgctxt "Block style label."
 msgid "Line separator"
@@ -185,32 +205,32 @@ msgctxt "Block style label."
 msgid "Drop shadow"
 msgstr "Tieň"
 
-#: includes/styles/others.php:44
+#: includes/styles/others.php:46
 msgctxt "Block style label."
 msgid "Curved"
 msgstr "Zakrivené"
 
-#: includes/styles/others.php:52
+#: includes/styles/others.php:54
 msgctxt "Block style label."
 msgid "Curved top"
 msgstr "Zakrivený vrch"
 
-#: includes/styles/others.php:60
+#: includes/styles/others.php:62
 msgctxt "Block style label."
 msgid "Curved bottom"
 msgstr "Zakrivené dno"
 
-#: includes/styles/others.php:68
+#: includes/styles/others.php:70
 msgctxt "Block style label."
 msgid "Waves"
 msgstr "Vlny"
 
-#: includes/styles/others.php:76
+#: includes/styles/others.php:78
 msgctxt "Block style label."
 msgid "Top waves"
 msgstr "Vlnitý vrch"
 
-#: includes/styles/others.php:84
+#: includes/styles/others.php:86
 msgctxt "Block style label."
 msgid "Bottom waves"
 msgstr "Vlnité dno"
@@ -270,7 +290,17 @@ msgctxt "Block style label."
 msgid "No vertical gap"
 msgstr "Žiadna vertikálna medzera"
 
-#: includes/styles/spacing.php:39
+#: includes/styles/spacing.php:21
+msgctxt "Block style label."
+msgid "Not needed if block margin options are supported."
+msgstr "Nepotrebné, ak sú podporované možnosti okrajov bloku."
+
+#: includes/styles/spacing.php:40
 msgctxt "Block style label."
 msgid "No gaps"
 msgstr "Žiadne medzery"
+
+#: includes/styles/spacing.php:41
+msgctxt "Block style label."
+msgid "Not needed if block spacing options are supported."
+msgstr "Nepotrebné, ak sú podporované možnosti rozstupu bloku."

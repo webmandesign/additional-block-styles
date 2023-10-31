@@ -2,7 +2,8 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.7.0
 //
 
 @import '../_setup/_index';
@@ -14,7 +15,7 @@
 		position: absolute;
 		inset: 0;
 		z-index: 2;
-		box-shadow: var(--abs_inner_shadow);
+		box-shadow: var(--wp--custom--abs--inner-shadow);
 	}
 
 	.wp-block-cover__inner-container {

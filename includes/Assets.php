@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.6.0
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -44,7 +44,8 @@ class Assets {
 	/**
 	 * Initialization.
 	 *
-	 * @since  1.0.0
+	 * @since    1.0.0
+	 * @version  1.7.0
 	 *
 	 * @return  void
 	 */
@@ -54,8 +55,7 @@ class Assets {
 
 			// Actions
 
-				add_action( 'wp_enqueue_scripts',          __CLASS__ . '::enqueue', 0 );
-				add_action( 'enqueue_block_editor_assets', __CLASS__ . '::enqueue', 0 );
+				add_action( 'enqueue_block_assets', __CLASS__ . '::enqueue', 0 );
 
 	} // /init
 
@@ -63,7 +63,7 @@ class Assets {
 	 * Enqueue styles and scripts.
 	 *
 	 * @since    1.0.0
-	 * @version  1.6.0
+	 * @version  1.7.0
 	 *
 	 * @return  void
 	 */
@@ -125,7 +125,7 @@ class Assets {
 				);
 			}
 
-			if ( doing_action( 'enqueue_block_editor_assets' ) ) {
+			if ( is_admin() ) {
 				wp_add_inline_style(
 					$handle,
 					self::get_css( '', ABS_PATH . 'assets/css/editor.css' )

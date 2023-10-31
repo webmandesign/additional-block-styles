@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.6.1
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -17,8 +17,9 @@ defined( 'ABSPATH' ) || exit;
 Register::add_style(
 	'drop-shadow',
 	array(
-		'label'  => _x( 'Drop shadow', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => array(
+		'label'       => _x( 'Drop shadow', 'Block style label.', 'additional-block-styles' ),
+		'description' => _x( 'Not needed if block shadow options are supported.', 'Block style label.', 'additional-block-styles' ),
+		'blocks'      => array(
 			'core/column',
 			'core/columns',
 			'core/cover',

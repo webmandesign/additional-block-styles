@@ -2,19 +2,20 @@
 // @package    Additional Block Styles
 // @copyright  WebMan Design, Oliver Juhas
 //
-// @since  1.0.0
+// @since    1.0.0
+// @version  1.7.0
 //
 
 @import '../_setup/_index';
 
 #{$abs} {
-	box-shadow: var(--abs_drop_shadow);
+	box-shadow: var(--wp--custom--abs--drop-shadow);
 
 	&.wp-block-image {
 		box-shadow: none;
 
 		img {
-			box-shadow: var(--abs_drop_shadow);
+			box-shadow: var(--wp--custom--abs--drop-shadow);
 		}
 	}
 }

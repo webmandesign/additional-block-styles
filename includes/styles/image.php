@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.5.0
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -55,9 +55,31 @@ Register::add_style(
 Register::add_style(
 	'inset-shadow',
 	array(
-		'label'  => _x( 'Inner shadow', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => array(
+		'label'       => _x( 'Inner shadow', 'Block style label.', 'additional-block-styles' ),
+		'description' => _x( 'Not needed if block shadow options are supported.', 'Block style label.', 'additional-block-styles' ),
+		'blocks'      => array(
 			'core/cover',
 		),
+	)
+);
+
+$blocks = array(
+	'core/image',
+	'core/post-featured-image',
+);
+
+Register::add_style(
+	'flip-horizontally',
+	array(
+		'label'  => _x( 'Flip horizontally', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'flip-vertically',
+	array(
+		'label'  => _x( 'Flip vertically', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
 	)
 );

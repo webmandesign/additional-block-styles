@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.5.0
- * @version  1.6.0
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -49,11 +49,11 @@ do_action( 'abs/options/field-type/checkboxes/before', $args );
 
 <ol class="abs-form-field-checkboxes"><?php
 
-	foreach ( $args['choices'] as $style_name => $style_label ) {
+	foreach ( $args['choices'] as $style_name => $style_args ) {
 
 		if (
 			! is_string( $style_name )
-			|| ! is_string( $style_label )
+			|| ! is_array( $style_args )
 		) {
 			continue;
 		}
@@ -76,8 +76,15 @@ do_action( 'abs/options/field-type/checkboxes/before', $args );
 			$title = '';
 		}
 
+		if ( isset( $style_args['description'] ) ) {
+			$class       = ' class="has-description"';
+			$description = ' <em class="abs-input-description">' . esc_attr( $style_args['description'] ) . '</em>';
+		} else {
+			$class = $description = '';
+		}
+
 		echo PHP_EOL
-			. '<li>'
+			. '<li' . $class . '>'
 			. '<label' . $title . '>'
 			. '<input'
 			. '	type="checkbox"'
@@ -86,7 +93,7 @@ do_action( 'abs/options/field-type/checkboxes/before', $args );
 			. checked( in_array( $style_name, $value ), true, false )
 			. '	/>'
 			. '<span class="abs-input-switch"></span>'
-			. '<span>' . esc_attr( $style_label ) . '</span>'
+			. '<span>' . esc_attr( $style_args['label'] ) . $description . '</span>'
 			. '</label>'
 			. '</li>';
 	}

@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.7.0
  */
 
 namespace WebManDesign\ABS;
@@ -20,15 +21,17 @@ $blocks = array(
 Register::add_style(
 	'alignleft',
 	array(
-		'label'  => _x( 'Single column: align left', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => $blocks,
+		'label'       => _x( 'Single column: align left', 'Block style label.', 'additional-block-styles' ),
+		'description' => _x( 'Could be replaced using Row (Group) block.', 'Block style label.', 'additional-block-styles' ),
+		'blocks'      => $blocks,
 	)
 );
 
 Register::add_style(
 	'alignright',
 	array(
-		'label'  => _x( 'Single column: align right', 'Block style label.', 'additional-block-styles' ),
-		'blocks' => $blocks,
+		'label'       => _x( 'Single column: align right', 'Block style label.', 'additional-block-styles' ),
+		'description' => _x( 'Could be replaced using Row (Group) block.', 'Block style label.', 'additional-block-styles' ),
+		'blocks'      => $blocks,
 	)
 );
