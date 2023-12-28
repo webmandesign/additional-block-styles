@@ -1,5 +1,22 @@
 # Additional Block Styles Changelog
 
+## 1.8.0, 20231228
+
+### Added
+- "Raster" style for Media & Text block
+
+### Fixed
+- Pull styles editor CSS
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	assets/scss/editor.scss
+	assets/scss/styles/blocks.scss
+	includes/styles/media-text.php
+
+
 ## 1.7.0, 20231031
 
 ### Added

@@ -5,7 +5,8 @@
  * @package    Additional Block Styles
  * @copyright  WebMan Design, Oliver Juhas
  *
- * @since  1.0.0
+ * @since    1.0.0
+ * @version  1.8.0
  */
 
 namespace WebManDesign\ABS;
@@ -37,6 +38,14 @@ Register::add_style(
 	'wavy',
 	array(
 		'label'  => _x( 'Wavy split', 'Block style label.', 'additional-block-styles' ),
+		'blocks' => $blocks,
+	)
+);
+
+Register::add_style(
+	'raster',
+	array(
+		'label'  => _x( 'Raster', 'Block style label.', 'additional-block-styles' ),
 		'blocks' => $blocks,
 	)
 );

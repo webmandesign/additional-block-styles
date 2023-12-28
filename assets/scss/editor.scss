@@ -5,7 +5,7 @@
 // @copyright  WebMan Design, Oliver Juhas
 //
 // @since    1.0.0
-// @version  1.7.0
+// @version  1.8.0
 //
 
 @import '_setup/_index';
@@ -96,7 +96,7 @@
 	.wp-block-post-content > [class*="-overlap-above"]:first-child,
 	.wp-block-post-content > [class*="-pull-up"]:first-child {
 		--wp--custom--abs--overlap-value: 0px;
-		--wp--custom--abs--pull: 0;
+		--wp--custom--abs--pull: 0px;
 	}
 }
 
