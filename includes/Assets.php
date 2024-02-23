@@ -6,7 +6,7 @@
  * @copyright  WebMan Design, Oliver Juhas
  *
  * @since    1.0.0
- * @version  1.7.0
+ * @version  1.8.1
  */
 
 namespace WebManDesign\ABS;
@@ -63,7 +63,7 @@ class Assets {
 	 * Enqueue styles and scripts.
 	 *
 	 * @since    1.0.0
-	 * @version  1.7.0
+	 * @version  1.8.1
 	 *
 	 * @return  void
 	 */
@@ -96,7 +96,7 @@ class Assets {
 				$css = str_replace(
 					self::$css_selector,
 					'.is-style-' . sanitize_html_class( self::$prefix . $block_style ),
-					trim( Assets::get_css( $block_style ) )
+					trim( self::get_css( $block_style ) )
 				);
 
 				/**

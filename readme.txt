@@ -7,7 +7,7 @@ Plugin URI:        https://www.webmandesign.eu/portfolio/additional-block-styles
 Requires at least: 6.0
 Tested up to:      6.4
 Requires PHP:      7.0
-Stable tag:        1.8.0
+Stable tag:        1.8.1
 License:           GPL-3.0-or-later
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 Tags:              webman, webman design, blocks, block editor, block style
@@ -156,6 +156,9 @@ Please see the [`changelog.md` file](https://github.com/webmandesign/additional-
 
 
 == Upgrade Notice ==
+
+= 1.8.1 =
+Improving code loading.
 
 = 1.8.0 =
 Adding "Raster" style for Media & Text block, fixing editor CSS styles.

@@ -1,5 +1,18 @@
 # Additional Block Styles Changelog
 
+## 1.8.1, 20240223
+
+### Updated
+- Improving code loading
+
+### File updates
+	additional-block-styles.php
+	changelog.md
+	readme.txt
+	includes/Assets.php
+	includes/styles/_index.php
+
+
 ## 1.8.0, 20231228
 
 ### Added
