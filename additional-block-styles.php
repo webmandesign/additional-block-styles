@@ -14,8 +14,6 @@
  * Requires PHP:       7.0
  * Requires at least:  6.0
  *
- * GitHub Plugin URI:  https://github.com/webmandesign/additional-block-styles
- *
  * @copyright  WebMan Design, Oliver Juhas
  * @license    GPL-3.0, https://www.gnu.org/licenses/gpl-3.0.html
  *
